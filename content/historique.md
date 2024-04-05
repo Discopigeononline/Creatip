@@ -1,0 +1,6 @@
+---
+title: Annuaire
+---
+
+Lorem ipsum
+

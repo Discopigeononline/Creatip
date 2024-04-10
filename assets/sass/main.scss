@@ -1,26 +1,57 @@
-body {
-  width: 400px;
-  margin: 0 auto;
-  font-family: sans-serif;
-}
+// Colors
+$background: #f5f5dc;
+$text: #2b2a2a;
+$nav-bg: #333;
+$nav-text: #f5f5dc;
+$nav-hover: #ffd700;
 
-nav ul {
-  list-style: none;
-  padding: 3px 5px;
-  background: #111;
+// Fonts
+$primary-font: 'Times New Roman', serif;
+$secondary-font: 'Arial', sans-serif;
+
+// Navbar
+.navbar {
+  background-color: $nav-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  // Cache navbar for 1 year
+  @include cache(1y);
 
   a {
-    color: #fff;
+    color: $nav-text;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    display: inline-block;
+    transition: color 0.3s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: $nav-hover;
+      background-image: linear-gradient(to right, transparent, $nav-hover, transparent);
+      background-size: 0% 100%;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      transition: color 0.3s ease, background-size 0.5s ease;
     }
   }
+}
 
-  li {
-    display: inline;
-  }
+// Hero section
+.hero {
+  background-image: url('/path/to/creation-of-adam.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  // Cache hero section for 1 month
+  @include cache(1m);
 }
 
 footer {

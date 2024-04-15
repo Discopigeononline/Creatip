@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Creatip</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Creatip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -23,16 +23,23 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
       <link>http://localhost:1313/recherche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/recherche/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>À propos</title>
+      <link>http://localhost:1313/apropos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/apropos/</guid>
+      <description>L&amp;rsquo;histoire commence au printemps 2004 à Athènes, où notre groupe de neuf amis de longue date se réunissent pour un séminaire de formation sur les psychothérapies. Ils constatent que la thérapie interpersonnelle (TIP), une nouvelle forme de psychothérapie largement pratiquée avec succès dans de nombreux pays, est peu connue et peu pratiquée en France. Pourtant, la TIP est reconnue dans la littérature médicale comme étant la psychothérapie la plus efficace dans le domaine du traitement de la dépression.</description>
+    </item>
+    <item>
+      <title>Actualités</title>
+      <link>http://localhost:1313/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/</guid>
       <description></description>
     </item>
     <item>
@@ -43,18 +50,11 @@
       <description>Henri Golo&#xA;Alex Térieur</description>
     </item>
     <item>
-      <title>Annuaire</title>
-      <link>http://localhost:1313/historique/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/historique/</guid>
-      <description>Lorem ipsum</description>
-    </item>
-    <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>creatip@annecy.com</description>
+      <description>creatip(at)annecy.com</description>
     </item>
   </channel>
 </rss>

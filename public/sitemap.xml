@@ -8,13 +8,13 @@
   </url><url>
     <loc>http://localhost:1313/formation/programme/</loc>
   </url><url>
-    <loc>http://localhost:1313/news/</loc>
-  </url><url>
     <loc>http://localhost:1313/recherche/</loc>
   </url><url>
-    <loc>http://localhost:1313/annuaire/</loc>
+    <loc>http://localhost:1313/apropos/</loc>
   </url><url>
-    <loc>http://localhost:1313/historique/</loc>
+    <loc>http://localhost:1313/news/</loc>
+  </url><url>
+    <loc>http://localhost:1313/annuaire/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

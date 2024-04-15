@@ -1,62 +1,62 @@
 // Colors
-$background: #f5f5dc;
-$text: #2b2a2a;
-$nav-bg: #333;
-$nav-text: #f5f5dc;
-$nav-hover: #ffd700;
+$bg-color: #F2E8CF;
+$text: #2F4F4F;
+$accent: #8B4513;
+$tan: #D2B48C;
+$attention-accent: #ffd700;
 
 // Fonts
 $primary-font: 'Times New Roman', serif;
-$secondary-font: 'Arial', sans-serif;
+
+body {
+  width: 90vw;
+  font-family: $primary-font;
+  color: $text;
+  background-color: $bg-color;
+  line-height: 1.5;
+}
+
+// Content
+.content {
+  padding: 1vw 3vw;
+}
 
 // Navbar
-.navbar {
-  background-color: $nav-bg;
-  position: fixed;
+.main-header {
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000;
+}
+nav ul {
+  list-style: none;
 
-  // Cache navbar for 1 year
-  @include cache(1y);
 
   a {
-    color: $nav-text;
-    text-decoration: none;
+    color: $text;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem 2rem;
     display: inline-block;
     transition: color 0.3s ease;
+    text-decoration: none;
 
     &:hover {
-      color: $nav-hover;
-      background-image: linear-gradient(to right, transparent, $nav-hover, transparent);
-      background-size: 0% 100%;
-      background-position: left bottom;
-      background-repeat: no-repeat;
-      transition: color 0.3s ease, background-size 0.5s ease;
+      color: $accent;
     }
   }
+  li {
+    display: inline;
+  }
 }
-
-// Hero section
-.hero {
-  background-image: url('/path/to/creation-of-adam.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-
-  // Cache hero section for 1 month
-  @include cache(1m);
+.scrolltop {
+  text-decoration: none;
 }
 
 footer {
-  background: #f2f2f2;
-  padding: 2px 2px;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: $tan;
   font-size: .7em;
   text-align: center;
 }

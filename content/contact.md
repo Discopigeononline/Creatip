@@ -2,4 +2,4 @@
 title: Contact
 ---
 
-creatip@annecy.com
+creatip(at)annecy.com

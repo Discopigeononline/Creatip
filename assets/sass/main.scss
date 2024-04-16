@@ -9,23 +9,32 @@ $attention-accent: #ffd700;
 $primary-font: 'Times New Roman', serif;
 
 body {
-  width: 90vw;
+  width: 100vw;
   font-family: $primary-font;
   color: $text;
   background-color: $bg-color;
   line-height: 1.5;
+  margin: 0;
+
+}
+#page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 // Content
-.content {
-  padding: 1vw 3vw;
+#content-wrap {
+  flex-grow: 1;
 }
 
 // Navbar
 .main-header {
   position: sticky;
+  height: 5.5rem;
   top: 0;
   left: 0;
+  right: 0;
 }
 nav ul {
   list-style: none;
@@ -48,15 +57,19 @@ nav ul {
     display: inline;
   }
 }
-.scrolltop {
-  text-decoration: none;
-}
 
+// Footer
 footer {
-  bottom: 0;
-  left: 0;
-  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   background: $tan;
   font-size: .7em;
   text-align: center;
-}
+  text-decoration: none;
+
+    .to_top {
+      
+      border-radius: 100%;
+    }
+  }

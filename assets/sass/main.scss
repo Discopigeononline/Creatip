@@ -31,26 +31,56 @@ body {
 // Navbar
 .main-header {
   position: sticky;
-  height: 5.5rem;
+  height: 4.5rem;
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba($bg-color, 0.7);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0em 0.005em $accent;
 }
 nav ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 
 
   a {
-    color: $text;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 1rem 2rem;
-    display: inline-block;
-    transition: color 0.3s ease;
-    text-decoration: none;
+    &:not(.logo) {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      font-size: 2em;
+      color: $text;
+      line-height: 1.5em;
+      text-decoration: none;
+      transition: all 0.4s ease;
 
-    &:hover {
-      color: $accent;
+      &:hover {
+        color: $accent;
+        transition: all 0.4s ease;
+
+        &:after {
+          background: $attention-accent;
+          transform: translatex(0);
+          transition: all 0.4s ease;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        transform: translatex(-100%);
+        background: $attention-accent;
+        transition: all 0.4s ease;
+      }
     }
   }
   li {

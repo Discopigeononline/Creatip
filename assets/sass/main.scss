@@ -26,12 +26,13 @@ body {
 // Content
 #content-wrap {
   flex-grow: 1 0 auto;
+  margin: 0 5vw;
 }
 
 // Navbar
 .main-header {
   position: sticky;
-  height: 10vh;
+  height: 12vh;
   top: 0;
   left: 0;
   right: 0;
@@ -44,6 +45,10 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+}
+
+#menu-wide {
+  display: none;
 }
 
 #overlay-button {
@@ -113,14 +118,14 @@ input[type=checkbox] {
   &.active {
     visibility: visible;
   }
-  #menu {
+  #menu-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     height: 100vh;
-
+    z-index: 4;
     list-style-type: none;
     .menu-item {
       padding: 1em;
@@ -128,34 +133,39 @@ input[type=checkbox] {
         color: $text;
         text-decoration: none;
         font-size: 2.5em;
-        &:hover {
-          color: $attention-accent;
-        }
       }
     }
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 930px) {
 
   #overlay-button{
   display: none;
   }
-  .menu {
+  #menu-wide {
+    display: block;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     overflow: hidden;
     line-height: 1.5em;
 
-    .menu-item {
+    .menu-wide-item {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-right: 2rem;
-      font-size: 2em;
-      color: $text;
-      text-decoration: none;
+      font-size: 1.6em;
+      font-weight: bolder;
+      a {
+        color: $accent;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          color: $attention-accent;
+        }
+      }
     }
   }
 

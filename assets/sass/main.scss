@@ -61,7 +61,7 @@ body {
 }
 
 .logo {
-  margin: 1vh 2.5vw;
+  padding: 1vh 2.5vw;
 }
 
 #menu-wide {
@@ -211,5 +211,6 @@ footer {
     "/images/hero-desktop.jpg" type("image/jpeg")
   );
     background-attachment: fixed;
+    background-size: 100% 100%;
   }
 }

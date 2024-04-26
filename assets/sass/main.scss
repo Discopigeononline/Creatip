@@ -29,6 +29,19 @@ body {
   margin: 0 5vw;
 }
 
+#bg-hero {
+  height: 100vh;
+  background-image: url("/images/hero-mobile.jpg");
+  background-image: image-set(
+    "/images/hero-mobile.webp" type("image/webp"),
+    "/images/hero-mobile.jpg" type("image/jpeg")
+  );
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 // Navbar
 .main-header {
   position: sticky;
@@ -45,6 +58,10 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  margin: 1vh 2.5vw;
 }
 
 #menu-wide {
@@ -138,6 +155,24 @@ input[type=checkbox] {
   }
 }
 
+
+
+// Footer
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: $footer-bg-color;
+  font-size: .7em;
+  text-align: center;
+  text-decoration: none;
+
+  .back_to_top {
+      border-style: solid;
+      border-radius: 100%;
+    }
+  }
+
 @media screen and (min-width: 930px) {
 
   #overlay-button{
@@ -169,21 +204,12 @@ input[type=checkbox] {
     }
   }
 
-}
-
-
-// Footer
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background: $footer-bg-color;
-  font-size: .7em;
-  text-align: center;
-  text-decoration: none;
-
-    .back_to_top {
-      border-style: solid;
-      border-radius: 100%;
-    }
+  #bg-hero {
+    background-image: url("/images/hero-desktop.jpg");
+    background-image: image-set(
+    "/images/hero-desktop.webp" type("image/webp"),
+    "/images/hero-desktop.jpg" type("image/jpeg")
+  );
+    background-attachment: fixed;
   }
+}

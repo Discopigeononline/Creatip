@@ -4,13 +4,13 @@
     {{partial "meta.html" . }}
   </head>
 
-  <body>
+  <body class="{{ .Params.class }}">
     <div id="page">
       {{ partial "nav.html" }}
-      <div id="content-wrap">
-        {{ block "main" . }}
-        {{ end }}
-      </div>
+      
+      {{ block "main" . }}
+      {{ end }}
+
       {{ partial "footer.html" . }}
     </div>
   </body>

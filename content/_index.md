@@ -1,5 +1,6 @@
 ---
 title: Home
+class: homepage
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor felis, porttitor in enim ut, suscipit luctus eros. Integer velit lacus, aliquet ac lorem eu, consequat consequat felis. In hac habitasse platea dictumst. Praesent vitae venenatis lectus. Cras fermentum tempor finibus. Nunc id ante dapibus arcu consectetur rutrum. Aliquam tempus fringilla libero, ac interdum mi sollicitudin sit amet. Aliquam lobortis eget enim eu fermentum. Sed sit amet suscipit dolor. Proin sit amet nunc nec justo congue ultricies sit amet a risus. Praesent feugiat, lorem vel laoreet molestie, magna eros faucibus dolor, a auctor eros mauris quis neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sollicitudin viverra quam vitae efficitur. Praesent euismod gravida gravida. Fusce eu posuere mauris. Ut ultrices volutpat dui, eu lacinia justo iaculis et.
 

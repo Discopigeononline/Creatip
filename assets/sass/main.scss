@@ -1,9 +1,9 @@
 // Colors
-$bg-color: #F2E8CF;
-$text: #2F4F4F;
-$accent: #8B4513;
-$footer-bg-color: #D2B48C;
-$attention-accent: #ffd700;
+$bg-color: #f7f3d7;
+$text: #4c4933;
+$accent: #522914;
+$secondary-bg-color: #668264;
+$attention-accent: #d9b567;
 
 // Fonts
 $primary-font: 'Times New Roman', serif;
@@ -30,6 +30,7 @@ body {
 }
 
 #bg-hero {
+  top: 0;
   height: 100vh;
   background-image: url("/images/hero-mobile.jpg");
   background-image: image-set(
@@ -40,6 +41,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+position: fixed;
+
 }
 
 // Navbar
@@ -49,10 +57,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba($bg-color, 0.7);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  box-shadow: 0em 0.005em $accent;
 }
 
 .navbar {
@@ -128,7 +132,7 @@ input[type=checkbox] {
 #overlay {
   height: 100vh;
   width: 100vw;
-  background: $footer-bg-color;
+  background: $secondary-bg-color;
   z-index: 3;
   visibility: hidden;
   position: fixed;
@@ -162,7 +166,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background: $footer-bg-color;
+  background: $secondary-bg-color;
   font-size: .7em;
   text-align: center;
   text-decoration: none;
@@ -174,6 +178,7 @@ footer {
   }
 
 @media screen and (min-width: 930px) {
+ 
 
   #overlay-button{
   display: none;

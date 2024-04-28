@@ -53,6 +53,10 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  background-image: url(/images/brush-header.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -61,7 +65,6 @@ body {
 }
 
 .logo {
-  padding: 1vh 2.5vw;
 }
 
 #menu-wide {
@@ -160,12 +163,17 @@ input[type=checkbox] {
 // Footer
 footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   background: $secondary-bg-color;
   font-size: .7em;
   text-align: center;
   text-decoration: none;
+  background-image: url(/images/brush-footer.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   .back_to_top {
       border-style: solid;

@@ -37,17 +37,13 @@ body {
     "/images/hero-mobile.webp" type("image/webp"),
     "/images/hero-mobile.jpg" type("image/jpeg")
   );
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#title {
-position: fixed;
-
 }
 
 // Navbar
@@ -178,7 +174,7 @@ footer {
   }
 
 @media screen and (min-width: 930px) {
- 
+
 
   #overlay-button{
   display: none;

@@ -35,7 +35,7 @@ body {
   background-image: url("/images/hero-mobile.jpg");
   background-image: image-set(
     "/images/hero-mobile.webp" type("image/webp"),
-    "/images/hero-mobile.jpg" type("image/jpeg")
+    "/images/hero-mobile.jpg" type("image/jpg")
   );
   background-attachment: fixed;
   background-position: center;

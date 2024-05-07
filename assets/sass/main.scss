@@ -62,11 +62,11 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 12vh;
-  margin: auto 10px;
+  margin: auto 3vw;
 }
 
 .logo {
-  width: 150px;
+  width: 20vw;
   height: auto;
   user-select: none;
 }
@@ -166,11 +166,11 @@ input[type=checkbox] {
 // Footer
 .back_to_top {
     align-self: flex-end;
-    margin: 20px 20px;
+    margin: 3vw 3vh;
     border-style: solid;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    width: 5vw;
+    height: 4.5vh;
 
   }
 footer {

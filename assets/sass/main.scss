@@ -66,9 +66,10 @@ body {
 }
 
 .logo {
-  width: 20vw;
-  height: auto;
+  height: 150px;
+  width: 150px;
   user-select: none;
+
 }
 
 #menu-wide {
@@ -81,8 +82,8 @@ body {
   z-index: 4;
   user-select: none;
   span {
-      height: 4px;
-      width: 35px;
+      height: 6px;
+      width: 50px;
       border-radius: 2px;
       background-color: $attention-accent;
       position: relative;
@@ -90,14 +91,13 @@ body {
       transition: all .25s ease-in-out;
       &:before {
         top: -10px;
-        visibility: visible;
       }
       &:after {
         top: 10px;
       }
       &:before, &:after {
-          height: 4px;
-          width: 35px;
+          height: 6px;
+          width: 50px;
           border-radius: 2px;
           background-color: $attention-accent;
           position: absolute;
@@ -167,10 +167,8 @@ input[type=checkbox] {
 .back_to_top {
     align-self: flex-end;
     margin: 3vw 3vh;
-    border-style: solid;
-    border-radius: 50%;
-    width: 5vw;
-    height: 4.5vh;
+    width: 100px;
+    height: 100px;
 
   }
 footer {

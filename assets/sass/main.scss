@@ -1,8 +1,8 @@
 // Colors
-$bg-color: #f7f3d7;
+$primary-color: #5776a4;
+$secondary-color: #f7f3d7;
 $text: #4c4933;
 $accent: #522914;
-$secondary-bg-color: #668264;
 $attention-accent: #d9b567;
 
 // Fonts
@@ -10,8 +10,8 @@ $primary-font: 'Times New Roman', serif;
 
 body {
   font-family: $primary-font;
-  color: $text;
-  background-color: $bg-color;
+  color: $primary-color;
+  background-color: $secondary-color;
   line-height: 1.5;
   margin: 0;
 
@@ -53,18 +53,17 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-image: url(/images/brush-header.avif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $primary-color;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  height: 12vh;
 }
 
 .logo {
+
 }
 
 #menu-wide {
@@ -82,7 +81,7 @@ body {
       height: 4px;
       width: 35px;
       border-radius: 2px;
-      background-color: $text;
+      background-color: $attention-accent;
       position: relative;
       display: block;
       transition: all .25s ease-in-out;
@@ -97,7 +96,7 @@ body {
           height: 4px;
           width: 35px;
           border-radius: 2px;
-          background-color: $text;
+          background-color: $attention-accent;
           position: absolute;
           content: "";
           transition: all .2s ease-in-out;
@@ -131,7 +130,7 @@ input[type=checkbox] {
 #overlay {
   height: 100vh;
   width: 100vw;
-  background: $secondary-bg-color;
+  background: $primary-color;
   z-index: 3;
   visibility: hidden;
   position: fixed;
@@ -161,24 +160,32 @@ input[type=checkbox] {
 
 
 // Footer
+.back_to_top {
+    align-self: flex-end;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+  }
 footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: $secondary-bg-color;
+  background: $primary-color;
   font-size: .7em;
   text-align: center;
   text-decoration: none;
-  background-image: url(/images/brush-footer.avif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $primary-color;
+  color: $secondary-color;
+
+  .creator {
+    color: inherit;
+    text-decoration: none;
+  }
 
 
-  .back_to_top {
-      border-style: solid;
-      border-radius: 100%;
-    }
   }
 
 @media screen and (min-width: 1000px) {

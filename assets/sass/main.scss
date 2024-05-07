@@ -1,7 +1,6 @@
 // Colors
 $primary-color: #5776a4;
 $secondary-color: #f7f3d7;
-$accent: #522914;
 $attention-accent: #d9b567;
 
 // Fonts
@@ -75,6 +74,7 @@ body {
 #menu-wide {
   display: none;
 }
+
 
 #overlay-button {
   justify-content: flex-end;
@@ -155,7 +155,7 @@ input[type=checkbox] {
       a {
         color: $attention-accent;
         text-decoration: none;
-        font-size: 2.5em;
+        font-size: 70px;
       }
     }
   }
@@ -181,14 +181,18 @@ footer {
   text-decoration: none;
   background-color: $primary-color;
   color: $secondary-color;
+  font-size: 20px;
 
+  #footer-eco, #conception {
+    display: inline-block;
+    border-top: 1px solid $secondary-color;
+    padding: 9px;
+  }
   .creator {
     color: inherit;
     text-decoration: none;
   }
-
-
-  }
+}
 
 @media screen and (min-width: 1000px) {
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Creatip</title>
+    <title>Thérapie Interpersonnelle | CREATIP on Creatip</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Creatip</description>
+    <description>Recent content in Thérapie Interpersonnelle | CREATIP on Creatip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -22,13 +22,6 @@
       <description></description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/recherche/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/recherche/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>À propos</title>
       <link>http://localhost:1313/apropos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -37,9 +30,9 @@
     </item>
     <item>
       <title>Actualités</title>
-      <link>http://localhost:1313/news/</link>
+      <link>http://localhost:1313/actualit%C3%A9s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/</guid>
+      <guid>http://localhost:1313/actualit%C3%A9s/</guid>
       <description></description>
     </item>
     <item>
@@ -55,6 +48,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
       <description>creatip(at)annecy.com</description>
+    </item>
+    <item>
+      <title>Recherche</title>
+      <link>http://localhost:1313/recherche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -4,10 +4,10 @@
     {{partial "meta.html" . }}
   </head>
 
-  <body class="{{ .Params.class }}">
+  <body>
     <div id="page">
       {{ partial "nav.html" }}
-      
+
       {{ block "main" . }}
       {{ end }}
 

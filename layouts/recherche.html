@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1 class="title">Recherche</h1>
+<div id="content-wrap">
+{{ .Content }}
+<ul>
+  {{ range .Site.RegularPages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</a>
+    </li>
+  {{ end }}
+</ul>
+</div>
+{{ end }}

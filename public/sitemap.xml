@@ -6,11 +6,9 @@
   </url><url>
     <loc>http://localhost:1313/formation/programme/</loc>
   </url><url>
-    <loc>http://localhost:1313/recherche/</loc>
-  </url><url>
     <loc>http://localhost:1313/apropos/</loc>
   </url><url>
-    <loc>http://localhost:1313/news/</loc>
+    <loc>http://localhost:1313/actualit%C3%A9s/</loc>
   </url><url>
     <loc>http://localhost:1313/annuaire/</loc>
   </url><url>
@@ -20,8 +18,10 @@
   </url><url>
     <loc>http://localhost:1313/formation/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/recherche/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>

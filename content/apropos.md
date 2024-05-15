@@ -1,5 +1,6 @@
 ---
 title: À propos
+descriiption: Historique de l'association Cercle de Recherches et d'Etudes Appliquées à la Thérapie InterPersonnelle.
 ---
 
 L'histoire commence au printemps 2004 à Athènes, où notre groupe de neuf amis de longue date se réunissent pour un séminaire de formation sur les psychothérapies. Ils constatent que la thérapie interpersonnelle (TIP), une nouvelle forme de psychothérapie largement pratiquée avec succès dans de nombreux pays, est peu connue et peu pratiquée en France. Pourtant, la TIP est reconnue dans la littérature médicale comme étant la psychothérapie la plus efficace dans le domaine du traitement de la dépression.

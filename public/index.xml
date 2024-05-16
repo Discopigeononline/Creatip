@@ -30,9 +30,9 @@
     </item>
     <item>
       <title>Actualités</title>
-      <link>http://localhost:1313/actualit%C3%A9s/</link>
+      <link>http://localhost:1313/actualites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/actualit%C3%A9s/</guid>
+      <guid>http://localhost:1313/actualites/</guid>
       <description></description>
     </item>
     <item>
@@ -54,7 +54,7 @@
       <link>http://localhost:1313/recherche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/recherche/</guid>
-      <description></description>
+      <description>Articles récents&#xA;art1&#xA;art2&#xA;art 3</description>
     </item>
   </channel>
 </rss>

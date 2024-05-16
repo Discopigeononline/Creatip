@@ -3,7 +3,7 @@
 <div id="content-wrap">
 {{ .Content }}
 <ul>
-  {{ range .Site.RegularPages }}
+  {{ range .Pages }}
     <li>
       <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</a>
     </li>

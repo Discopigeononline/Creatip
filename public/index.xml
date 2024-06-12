@@ -36,11 +36,18 @@
       <description></description>
     </item>
     <item>
-      <title>Annuaire</title>
-      <link>http://localhost:1313/annuaire/</link>
+      <title>Alain Terieur</title>
+      <link>http://localhost:1313/annuaire/alain_terieur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/annuaire/</guid>
-      <description>Henri Golo&#xA;Alex Térieur</description>
+      <guid>http://localhost:1313/annuaire/alain_terieur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alex Terieur</title>
+      <link>http://localhost:1313/annuaire/alex_terieur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/annuaire/alex_terieur/</guid>
+      <description></description>
     </item>
     <item>
       <title>Contact</title>
@@ -50,11 +57,25 @@
       <description>creatip(at)annecy.com</description>
     </item>
     <item>
-      <title>Recherche</title>
-      <link>http://localhost:1313/recherche/</link>
+      <title>Henri Golo</title>
+      <link>http://localhost:1313/annuaire/henri_golo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/recherche/</guid>
-      <description>Articles récents&#xA;art1&#xA;art2&#xA;art 3</description>
+      <guid>http://localhost:1313/annuaire/henri_golo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>title2</title>
+      <link>http://localhost:1313/recherche/article2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/article2/</guid>
+      <description>Hello there</description>
+    </item>
+    <item>
+      <title>Yooo</title>
+      <link>http://localhost:1313/recherche/article1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/article1/</guid>
+      <description>Once upon a time</description>
     </item>
   </channel>
 </rss>

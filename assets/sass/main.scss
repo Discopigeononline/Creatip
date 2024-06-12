@@ -7,6 +7,12 @@ $attention-accent: #EBB94D;
 // Fonts
 $primary-font: 'Times New Roman', serif;
 
+// Ressources
+$hero-mobile-avif: '/images/hero-mobile.avif';
+$hero-mobile: '/images/hero-mobile.png';
+$hero-desktop-avif: '/images/hero-desktop.avif';
+$hero-desktop: '/images/hero-desktop.png';
+
 body {
   font-family: $primary-font;
   color: $primary-color;
@@ -22,32 +28,6 @@ body {
   flex-direction: column;
 }
 
-// Content
-#content-wrap {
-  flex-grow: 1 0 auto;
-  margin: 0 5vw;
-  text-align: justify;
-}
-
-#bg-hero {
-  top: 0;
-  height: 100vh;
-  background-image: url("/images/hero-mobile.jpg");
-  background-image: image-set(
-    "/images/hero-mobile.webp" type("image/webp"),
-    "/images/hero-mobile.jpg" type("image/jpg")
-  );
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-
-  h1 {
-      color:$attention-accent;
-    }
-}
-
 // Navbar
 .main-header {
   position: sticky;
@@ -55,7 +35,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: $primary-color;
+  background-color: $bg-color;
 }
 
 .navbar {
@@ -73,11 +53,6 @@ body {
   user-select: none;
 
 }
-
-#menu-wide {
-  display: none;
-}
-
 
 #overlay-button {
   justify-content: flex-end;
@@ -165,6 +140,38 @@ input[type=checkbox] {
 }
 
 
+// Content
+#content-wrap {
+  flex-grow: 1 0 auto;
+  margin: 0 5vw;
+  text-align: justify;
+}
+
+#bg-hero {
+  height: 60vh;
+  background-image: image-set(
+    $hero-mobile-avif type("image/avif"),
+    $hero-mobile type("image/png")
+  );
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  h1 {
+      color:$attention-accent;
+    }
+}
+
+.item {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.list-item a:hover.item:not(:hover) {
+  color: lightgray;
+}
 
 // Footer
 .back_to_top {
@@ -199,42 +206,13 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
-
-  #overlay-button{
-  display: none;
-  }
-  #menu-wide {
-    display: block;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    line-height: 1.5em;
-
-    .menu-wide-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 2rem;
-      font-size: 1.6em;
-      font-weight: bolder;
-      a {
-        color: $secondary-color;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
-        &:hover{
-          color: $attention-accent;
-        }
-      }
-    }
-  }
-
   #bg-hero {
-    background-image: url("/images/hero-desktop.jpg");
+    height: 90vh;
+    background-image: url("/images/hero-desktop.png");
     background-image: image-set(
-    "/images/hero-desktop.avif" type("image/avif"),
-    "/images/hero-desktop1.jpg" type("image/jpeg")
-  );
+    $hero-desktop-avif type("image/avif"),
+    $hero-desktop type("image/png")
+    );
     background-attachment: fixed;
     background-size: 100% 100%;
   }

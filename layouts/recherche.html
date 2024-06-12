@@ -3,11 +3,11 @@
 <div id="content-wrap">
 {{ .Content }}
 <ul>
-  {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</a>
-    </li>
-  {{ end }}
+{{ $section := site.GetPage "recherche" }}
+{{ range $section.Pages }}
+{{ .Title }}
+{{ end }}
+{{ end }}
 </ul>
 </div>
 {{ end }}

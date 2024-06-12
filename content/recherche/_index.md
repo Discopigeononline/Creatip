@@ -4,8 +4,3 @@ description: Liste des dernières parutions scientifiques des membres du Cercle 
 ---
 Articles récents
 
-art1
-
-art2
-
-art 3

@@ -1,13 +1,11 @@
+<div class="content-wrap">
 {{ define "main" }}
-<h1 class="title">Recherche</h1>
-<div id="content-wrap">
-{{ .Content }}
-<ul>
-{{ $section := site.GetPage "recherche" }}
-{{ range $section.Pages }}
-{{ .Title }}
-{{ end }}
-{{ end }}
-</ul>
+  <ul>
+    {{ $section := site.GetPage "recherche" }}
+    {{ range $section.Pages }}
+    {{ .Title }}
+    
+    {{ end }}
+  </ul>
+  {{ end }}
 </div>
-{{ end }}

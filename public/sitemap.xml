@@ -10,6 +10,10 @@
   </url><url>
     <loc>http://localhost:1313/actualites/</loc>
   </url><url>
+    <loc>http://localhost:1313/annuaire/alain_terieur/</loc>
+  </url><url>
+    <loc>http://localhost:1313/annuaire/alex_terieur/</loc>
+  </url><url>
     <loc>http://localhost:1313/annuaire/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -18,10 +22,16 @@
   </url><url>
     <loc>http://localhost:1313/formation/</loc>
   </url><url>
+    <loc>http://localhost:1313/annuaire/henri_golo/</loc>
+  </url><url>
     <loc>http://localhost:1313/recherche/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/article2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/article1/</loc>
   </url>
 </urlset>

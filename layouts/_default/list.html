@@ -1,6 +1,10 @@
 {{ define "main" }}
+<div class="content-wrap">
   {{ .Content }}
+</div>
+<ul class="list-items">
   {{ range .Pages }}
-  <h2 class="list-items"><a class="item" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  <li><a class="item" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
+</ul>
 {{ end }}

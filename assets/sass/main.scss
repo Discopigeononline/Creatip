@@ -10,9 +10,13 @@ $text-font: 'Times New Roman', sans-serif;
 
 // Sizes
 $header-height: 12vh;
-$hero-overlay-height: calc(100vh - $header-height);
+$hero-height: calc(100vh - $header-height);
 $logo-height: 140px;
 $logo-width: 140px;
+$title-size: calc(25px + 2vw);
+$uppercase-size: 2.5em;
+$title-line-height: calc(1em + 3vh);
+$title-padding: calc(34px + 2vw);
 
 // Ressources
 $hero-mobile-avif: '/images/hero-mobile.avif';
@@ -29,7 +33,6 @@ body {
   h1, h2, h3, h4, h5, h6, li {
     font-family: $header-font;
   }
-  ;
 }
 
 #page {
@@ -69,7 +72,7 @@ body {
 #overlay-button {
   justify-content: flex-end;
   cursor: pointer;
-  z-index: 4;
+  z-index: 5;
   user-select: none;
   span {
       height: 6px;
@@ -127,7 +130,7 @@ input[type=checkbox] {
   width: 100%;
   height: 100%;
   background: $primary-color;
-  z-index: 3;
+  z-index: 4;
   display: none;
   position: fixed;
 
@@ -162,7 +165,7 @@ input[type=checkbox] {
 }
 
 #bg-hero {
-  height: 100vh;
+  height: 88vh;
   background-image: image-set(
     $hero-mobile-avif type("image/avif"),
     $hero-mobile type("image/png")
@@ -173,17 +176,31 @@ input[type=checkbox] {
   background-size: cover;
   display: flex;
 
-  #title {
+  #title-overlay {
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
   }
+
   h1 {
-      color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    color: white;
+    font-size: $title-size;
+    font-weight: bold;
+    line-height: $title-line-height;
+    padding-left: 3vw;
+
+    .title-item {
+      padding-left: $title-padding;
     }
+
+    .uppercase {
+      font-size: $uppercase-size;
+    }
+  }
 }
-
-
 
 .list-items {
   list-style-type: none;

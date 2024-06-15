@@ -225,7 +225,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     overflow: hidden;
-    line-height: 1.5em;
+    line-height: 5vh;
 
     .menu-wide-item {
       display: flex;
@@ -248,8 +248,8 @@ footer {
   #bg-hero {
     background-image: url("/images/hero-desktop.jpg");
     background-image: image-set(
-    "/images/hero-desktop.webp" type("image/webp"),
-    "/images/hero-desktop.jpg" type("image/jpeg")
+    url("/images/hero-desktop.webp") type("image/webp"),
+    url("/images/hero-desktop.jpg") type("image/jpeg")
   );
     background-attachment: fixed;
     background-size: 100% 100%;

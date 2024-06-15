@@ -1,10 +1,10 @@
-<div class="content-wrap">
+  <div class="content-wrap">
 {{ define "main" }}
   <ul>
     {{ $section := site.GetPage "recherche" }}
     {{ range $section.Pages }}
     {{ .Title }}
-    
+
     {{ end }}
   </ul>
   {{ end }}

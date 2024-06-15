@@ -4,7 +4,7 @@
 </div>
 <ul class="list-items">
   {{ range .Pages }}
-  <li><a class="item" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  <li><a class="item" href="{{ .RelPermalink }}" aria-label="Read more about {{ .LinkTitle }}">{{ .LinkTitle }}</a></li>
   {{ end }}
 </ul>
 {{ end }}

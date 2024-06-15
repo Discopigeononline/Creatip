@@ -167,9 +167,9 @@ input[type=checkbox] {
 #bg-hero {
   height: 88vh;
   background-image: image-set(
-    $hero-mobile-avif type("image/avif"),
-    $hero-mobile type("image/png")
-  );
+    url($hero-mobile-avif) type("image/avif"),
+    url($hero-mobile) type("image/png")
+    );
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -255,43 +255,12 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
-
-  #overlay-button{
-  display: none;
-  }
-  #menu-wide {
-    display: block;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-    line-height: 5vh;
-
-    .menu-wide-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 2rem;
-      font-size: 1.6em;
-      font-weight: bolder;
-      a {
-        color: $secondary-color;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
-        &:hover{
-          color: $attention-accent;
-        }
-      }
-    }
-  }
-
   #bg-hero {
     height: 90vh;
-    background-image: url("/images/hero-desktop.png");
     background-image: image-set(
-    url($hero-desktop-avif) type("image/avif"),
-    url($hero-desktop) type("image/png")
-    );
+      url($hero-desktop-avif) type("image/avif"),
+      url($hero-desktop) type("image/png")
+      );
     background-attachment: fixed;
     background-size: 100% 100%;
   }

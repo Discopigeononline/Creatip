@@ -16,6 +16,18 @@
   </url><url>
     <loc>http://localhost:1313/annuaire/</loc>
   </url><url>
+    <loc>http://localhost:1313/recherche/art3-copy-5/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/art3-copy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/art3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/art3-copy-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/art3-copy-3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recherche/art3-copy-4/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>

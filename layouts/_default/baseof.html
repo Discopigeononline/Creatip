@@ -7,7 +7,9 @@
 <body>
   <main id="page">
     {{ partial "nav.html" }}
-    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if not .IsHome }}
+      <h1 class="page-title">{{ .Title }}</h1>
+    {{ end }}
     {{ block "main" . }}
     {{ end }}
     <div class="back_to_top">

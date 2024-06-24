@@ -12,12 +12,12 @@ $font-size: 22px;
 // Sizes
 $header-height: 12vh;
 $hero-height: calc(100vh - $header-height);
-$logo-height: 140px;
-$logo-width: 140px;
-$title-size: calc(25px + 2vw);
+$logo-height: 100%;
+$logo-width: 100%;
+$title-size: calc(25px + 1.2vw);
 $uppercase-size: 2.5em;
 $title-line-height: calc(1em + 3vh);
-$title-padding: calc(34px + 2vw);
+$title-padding: calc(34px + 1.2vw);
 $footer-height: 40vh;
 
 // Ressources
@@ -32,7 +32,7 @@ body {
   background-color: $bg-color;
   line-height: 1.5;
   margin: 0;
-  h1, h2, h3, h4, h5, h6, li {
+  h1, h2, h3, h4, h5, h6 {
     font-family: $header-font;
   }
 }
@@ -141,7 +141,6 @@ input[type=checkbox] {
   z-index: 4;
   display: none;
   position: fixed;
-  overflow: hidden;
 
   #menu {
     display: flex;
@@ -150,14 +149,17 @@ input[type=checkbox] {
     flex-direction: column;
     text-align: center;
     height: 100vh;
+    max-height: 90vh;
     z-index: 4;
     list-style-type: none;
+    overflow: hidden;
+
     .menu-item {
       padding: 1em;
       a {
         color: $attention-accent;
         text-decoration: none;
-        font-size: 70px;
+        font-size: 2em;
         &:hover {
           color: $bg-color;
         }

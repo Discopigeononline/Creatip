@@ -18,7 +18,7 @@ $title-size: calc(25px + 1.2vw);
 $uppercase-size: 2.5em;
 $title-line-height: calc(1em + 3vh);
 $title-padding: calc(34px + 1.2vw);
-$footer-height: 40vh;
+$footer-height: 45vh;
 
 // Ressources
 $hero-mobile-avif: '/images/hero-mobile.avif';
@@ -187,7 +187,6 @@ input[type=checkbox] {
     url($hero-mobile-avif) type("image/avif"),
     url($hero-mobile) type("image/png")
     );
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,10 +246,9 @@ input[type=checkbox] {
 
 // Footer
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  height: 40vh;
-  z-index: -2;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -260,7 +258,7 @@ footer {
   color: $primary-color;
   font-size: 20px;
 
-  #footer-eco, #conception {
+  #footer-eco {
     display: inline-block;
     border-top: 1px solid $secondary-color;
   }
@@ -280,5 +278,11 @@ footer {
       );
     background-attachment: fixed;
     background-size: 100% 100%;
+  }
+
+  footer {
+    position: fixed;
+    z-index: -2;
+    height: $footer-height;
   }
 }

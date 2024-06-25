@@ -46,7 +46,6 @@ body {
   flex-direction: column;
   background-color: $bg-color;
   font-size: $font-size;
-  margin-bottom: $footer-height;
 }
 
 .page-title {
@@ -278,6 +277,10 @@ footer {
       );
     background-attachment: fixed;
     background-size: 100% 100%;
+  }
+  
+  #page {
+    margin-bottom: $footer-height;
   }
 
   footer {

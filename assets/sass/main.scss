@@ -26,6 +26,10 @@ $hero-mobile: '/images/hero-mobile.png';
 $hero-desktop-avif: '/images/hero-desktop.avif';
 $hero-desktop: '/images/hero-desktop.png';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $text-font;
   color: $primary-color;
@@ -115,6 +119,10 @@ input[type=checkbox] {
     display: block;
   }
 
+  &:checked ~ #page {
+    overflow: none;
+  }
+
   &:checked ~ #overlay-button {
     &:hover span, span{
       background: transparent;
@@ -140,7 +148,7 @@ input[type=checkbox] {
   background: $primary-color;
   z-index: 4;
   display: none;
-  position: fixed;
+  overflow-y: scroll;
 
   #menu {
     display: flex;
@@ -149,17 +157,14 @@ input[type=checkbox] {
     flex-direction: column;
     text-align: center;
     height: 100vh;
-    max-height: 90vh;
     z-index: 4;
     list-style-type: none;
-    overflow: hidden;
 
     .menu-item {
-      padding: 1em;
       a {
         color: $attention-accent;
         text-decoration: none;
-        font-size: 2em;
+        font-size: 2.5em;
         &:hover {
           color: $bg-color;
         }

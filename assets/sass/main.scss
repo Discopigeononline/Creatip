@@ -7,7 +7,7 @@ $attention-accent: #EBB94D;
 // Fonts
 $header-font: 'Courier New', serif;
 $text-font: 'Times New Roman', sans-serif;
-$font-size: 22px;
+$font-size: 18px;
 
 // Sizes
 $header-height: 12vh;
@@ -245,7 +245,6 @@ input[type=checkbox] {
 
 // Footer
 footer {
-  position: relative;
   bottom: 0;
   z-index: 2;
   display: flex;
@@ -278,7 +277,7 @@ footer {
     background-attachment: fixed;
     background-size: 100% 100%;
   }
-  
+
   #page {
     margin-bottom: $footer-height;
   }

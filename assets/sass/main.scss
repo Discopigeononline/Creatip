@@ -78,8 +78,7 @@ body {
 }
 
 .logo {
-  height: $logo-height;
-  width: $logo-width;
+  height: 14vh;
   user-select: none;
 }
 
@@ -177,12 +176,14 @@ input[type=checkbox] {
 }
 
 // Content
-.content-wrap {
+#content-wrap {
   margin: 0 3vw;
   text-align: justify;
+  padding-top: 10vh;
 }
 
 #bg-hero {
+  height: 88vh;
   background: image-set(
     url($hero-mobile-avif) type("image/avif"),
     url($hero-mobile) type("image/png")
@@ -212,8 +213,15 @@ input[type=checkbox] {
       }
     }
     #slidedown {
-      width: 50px;
+      align-self: center;
+      width: calc(30px + 2vw);
       height: auto;
+      margin-bottom: 2vh;
+
+      &:hover path{
+        fill: $bg-color;
+      }
+
     }
   }
 }
@@ -240,8 +248,8 @@ input[type=checkbox] {
 
 .back_to_top {
     align-self: flex-end;
-    width: 100px;
-    height: 100px;
+    width: calc(70px + 7vw);
+    padding: 3vw;
   }
 
 // Footer
@@ -269,7 +277,6 @@ footer {
 @media screen and (min-width: 1000px) {
 
   #bg-hero {
-    height: 90vh;
     background-image: image-set(
       url($hero-desktop-avif) type("image/avif"),
       url($hero-desktop) type("image/png")

@@ -82,11 +82,16 @@ body {
   user-select: none;
 }
 
-#overlay-button {
+#menu-button {
   justify-content: flex-end;
   cursor: pointer;
   z-index: 5;
   user-select: none;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   span {
       height: 6px;
@@ -126,7 +131,7 @@ input[type=checkbox] {
     overflow: hidden;
   }
 
-  &:checked ~ #overlay-button {
+  &:checked ~ #menu-button {
 
     span {
       &:hover, & {
@@ -163,11 +168,17 @@ input[type=checkbox] {
     height: 100vh;
     z-index: 4;
     list-style-type: none;
+    padding-left: 0;
+
+    ul {
+      padding-left: 0;
+    }
 
     .menu-item a {
       color: $attention-accent;
       text-decoration: none;
       font-size: 3em;
+
       &:hover {
         color: $bg-color;
       }
@@ -183,7 +194,7 @@ input[type=checkbox] {
 }
 
 #bg-hero {
-  height: 88vh;
+  height: 80vh;
   background: image-set(
     url($hero-mobile-avif) type("image/avif"),
     url($hero-mobile) type("image/png")
@@ -202,6 +213,8 @@ input[type=checkbox] {
       font: bold $title-size/$title-line-height $header-font;
       color: white;
       padding-left: 3vw;
+      padding-top: 5vh;
+
 
       .title-item {
         padding-left: $title-padding;
@@ -277,6 +290,7 @@ footer {
 @media screen and (min-width: 1000px) {
 
   #bg-hero {
+    height: 88vh;
     background-image: image-set(
       url($hero-desktop-avif) type("image/avif"),
       url($hero-desktop) type("image/png")

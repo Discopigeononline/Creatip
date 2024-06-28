@@ -190,11 +190,11 @@ input[type=checkbox] {
 #content-wrap {
   margin: 0 3vw;
   text-align: justify;
-  padding-top: 10vh;
+  padding-top: 8vh;
 }
 
 #bg-hero {
-  height: 80vh;
+  height: 75vh;
   background: image-set(
     url($hero-mobile-avif) type("image/avif"),
     url($hero-mobile) type("image/png")

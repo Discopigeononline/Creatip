@@ -7,7 +7,7 @@ $attention-accent: #EBB94D;
 // Fonts
 $header-font: 'Courier New', serif;
 $text-font: 'Times New Roman', sans-serif;
-$font-size: 1.2rem;
+$font-size: 1.5rem;
 
 // Sizes
 $header-height: 12vh;
@@ -26,8 +26,13 @@ $hero-mobile: '/images/hero-mobile.png';
 $hero-desktop-avif: '/images/hero-desktop.avif';
 $hero-desktop: '/images/hero-desktop.png';
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+
+* {
+margin: 0;
 }
 
 html {
@@ -39,11 +44,16 @@ body {
   color: $primary-color;
   background-color: $bg-color;
   line-height: 1.5;
-  margin: 0;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $header-font;
   }
+}
+
+input, button, textarea, select {
+  font: inherit;
 }
 
 #page {
@@ -191,6 +201,7 @@ input[type=checkbox] {
   margin: 0 3vw;
   text-align: justify;
   padding-top: 8vh;
+  
 }
 
 #bg-hero {
@@ -239,19 +250,55 @@ input[type=checkbox] {
   }
 }
 
+.posts-container {
+  display: grid;
+  grid-template-columns: 10% 85%;
+  grid-template-areas:
+    "date-header title-header"
+    "post-date post-title";
+  margin: 3vw;
+
+  .date-header {
+    grid-area: date-header;
+  }
+
+  .title-header {
+    grid-area: title-header;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .post-date {
+    grid-area: post-date;
+  }
+
+  .post-title{
+    grid-area: post-title;
+
+  }
+}
+
 .list-items {
   list-style-type: none;
   padding: 0;
-  margin: 3vw;
+  width: 96vw;
 
   &:hover .item {
   color: lightgray;
+  }
+
+  .list-items-container {
+    h2{
+      display: inline-block;
+    }
   }
 
   .item {
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
 
     &:hover {
     color: black;

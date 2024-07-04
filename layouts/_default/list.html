@@ -2,9 +2,14 @@
 <div class="content-wrap">
   {{ .Content }}
 </div>
-<ul class="list-items">
-  {{ range .Pages }}
-  <li><a class="item" href="{{ .RelPermalink }}" aria-label="Read more about {{ .LinkTitle }}">{{ .LinkTitle }}</a></li>
-  {{ end }}
-</ul>
+<section class="list-items-container">
+  <ul class="list-items">
+    {{ range .Pages }}
+    <li>
+      <a class="item" href="{{ .RelPermalink }}" aria-label="Read more about {{ .LinkTitle }}">
+       <span>{{ .LinkTitle }}</span>
+    </a></li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}

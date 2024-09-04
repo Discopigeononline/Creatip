@@ -3,4 +3,4 @@ title= "Perceptions, facilitators and barriers to the implementation of interper
 date= "2023-11-19T00:40:04-07:00"
 +++
 
-[Download file](/static/pdf/Bernard_et_al_2024_Frontiers_in_public_health.pdf)
+[Download file](./Bernard_et_al_2024_Frontiers_in_public_health.pdf)

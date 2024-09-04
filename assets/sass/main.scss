@@ -11,7 +11,7 @@ $font-size: 1.5rem;
 
 // Sizes
 $header-height: 12vh;
-$hero-height: 88vh;
+$hero-height: 88dvh;
 $logo-height: 100%;
 $logo-width: 100%;
 $title-size: calc(1.3rem + 1.2vw);
@@ -89,6 +89,7 @@ input, button, textarea, select {
 
 .logo {
   height: 14vh;
+  width: auto;
   user-select: none;
 }
 
@@ -201,11 +202,11 @@ input[type=checkbox] {
   margin: 0 3vw;
   text-align: justify;
   padding-top: 8vh;
-  
+
 }
 
 #bg-hero {
-  height: 75vh;
+  height: $hero-height;
   background: image-set(
     url($hero-mobile-avif) type("image/avif"),
     url($hero-mobile) type("image/png")
@@ -337,7 +338,7 @@ footer {
 @media screen and (min-width: 1000px) {
 
   #bg-hero {
-    height: 88vh;
+    height: $hero-height;
     background-image: image-set(
       url($hero-desktop-avif) type("image/avif"),
       url($hero-desktop) type("image/png")

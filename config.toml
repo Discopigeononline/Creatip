@@ -1,3 +1,6 @@
 baseURL = 'https://therapieinterpersonnelle.netlify.app/'
 languageCode = 'fr-fr'
 title = 'Creatip'
+
+[params]
+  dateFormat = "02 Jan 2006"

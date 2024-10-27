@@ -199,9 +199,14 @@ input[type=checkbox] {
 
 // Content
 #content-wrap {
-  margin: 0 3vw;
-  text-align: justify;
+  margin: 0 9vw;
   padding-top: 8vh;
+}
+
+#content-wrap-post p > a {
+text-decoration: none;
+text-align: center;
+margin: 8vw;
 
 }
 

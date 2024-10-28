@@ -4,14 +4,49 @@ backend:
 media_folder: "static/images"
 public_folder: "images"
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "content/posts"
+  - name: "actualités"
+    label: "Actualités"
+    folder: "content/actualités"
     path: "{{slug}}/"
     media_folder: ""
     public_folder: ""
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: "annuaire"
+    label: "Annuaire"
+    folder: "content/annuaire"
+    path: "/annuaire/{{name}}/"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - {label: "Nom", name: "name", widget: "string"}
+      - {label: "Prénom", name: "firstname", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+ 
+  - name: "recherches"
+    label: "Recherches"
+    folder: "content/recherches"
+    path: "recherches/{{year}}/{{month}}/{{slug}}/"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Document", name: "document", widget: "file"}
+
+  - name: "apropos"
+    label: "À Propos"
+    folder: "content/apropos"
+    path: "apropos/"
+    media_folder: ""
+    public_folder: ""
+    create: false
+    fields:
+      - {label: "Contenu", name: "body", widget: "markdown"}

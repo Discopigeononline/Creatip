@@ -4,6 +4,14 @@ backend:
 media_folder: "static/images"
 public_folder: "images"
 collections:
+
+  - name: "Index"
+    label: "Page d'Accueil"
+    folder: "content/_index.md"
+    create: false
+    fields:
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
   - name: "actualités"
     label: "Actualités"
     folder: "content/actualités"
@@ -27,7 +35,7 @@ collections:
       - {label: "Nom", name: "name", widget: "string"}
       - {label: "Prénom", name: "firstname", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
- 
+
   - name: "recherches"
     label: "Recherches"
     folder: "content/recherches"

@@ -38,10 +38,10 @@ collections:
       - {label: "Prénom", name: "firstname", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
 
-  - name: "recherches"
-    label: "Recherches"
-    folder: "content/recherches"
-    path: "recherches/{{year}}/{{month}}/{{slug}}/"
+  - name: "recherche"
+    label: "Recherche"
+    folder: "content/recherche"
+    path: "recherche/{{year}}/{{month}}/{{slug}}/"
     media_folder: ""
     public_folder: ""
     create: true

@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: 'https://github.com/Discopigeononline/Creatip'
   branch: main
 media_folder: "static/images"
 public_folder: "images"

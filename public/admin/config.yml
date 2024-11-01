@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: 'https://github.com/Discopigeononline/Creatip'
   branch: main
 media_folder: "static/images"
 public_folder: "images"
@@ -13,6 +14,7 @@ collections:
       - {label: "Contenu", name: "body", widget: "markdown"}
 
   - name: "actualités"
+    identifier_field: title
     label: "Actualités"
     folder: "content/actualités"
     path: "{{slug}}/"
@@ -27,7 +29,7 @@ collections:
   - name: "annuaire"
     label: "Annuaire"
     folder: "content/annuaire"
-    path: "/annuaire/{{name}}/"
+    path: "annuaire/{{name}}/"
     media_folder: ""
     public_folder: ""
     create: true

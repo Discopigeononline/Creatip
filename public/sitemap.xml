@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/recherche/</loc>
+    <lastmod>2024-11-06T18:33:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-06T18:33:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/actu/</loc>
+    <lastmod>2024-11-06T18:32:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/recherche/2024/11/percept/a/</loc>
+    <lastmod>2024-11-06T17:10:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/recherche/art3-copy-2/</loc>
     <lastmod>2023-11-19T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recherche/</loc>
-    <lastmod>2023-11-19T00:40:04-07:00</lastmod>
+    <loc>http://localhost:1313/actu/actu-1/</loc>
+    <lastmod>2023-10-19T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2023-11-19T00:40:04-07:00</lastmod>
+    <loc>http://localhost:1313/actu/actu-2/</loc>
+    <lastmod>2023-10-19T00:40:04-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/recherche/art3-copy-3/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
@@ -37,8 +49,6 @@
     <loc>http://localhost:1313/formation/programme/</loc>
   </url><url>
     <loc>http://localhost:1313/apropos/</loc>
-  </url><url>
-    <loc>http://localhost:1313/actu/</loc>
   </url><url>
     <loc>http://localhost:1313/annuaire/alain_terieur/</loc>
   </url><url>

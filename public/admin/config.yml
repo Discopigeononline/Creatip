@@ -29,7 +29,7 @@ collections:
   - name: "annuaire"
     label: "Annuaire"
     folder: "content/annuaire"
-    path: "{{name}}/"
+    path: "{{name}}.md"
     media_folder: ""
     public_folder: ""
     create: true

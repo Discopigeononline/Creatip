@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="content-wrap">
+  {{ .Content }}
+</div>
+<div class="posts-container">
+  <h4 class="date-header">Date</h4>
+  <h4 class="title-header">Titre</h4>
+  <div class="list-items">
+    {{ range .Pages }}
+    <a class="item" href="{{ .RelPermalink }}" aria-label="Read more about {{ .LinkTitle }}">
+        <span class="post-date">{{ .Date.Format .Site.Params.dateFormat }}</span>
+        <span class="post-title">{{ .LinkTitle }}</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

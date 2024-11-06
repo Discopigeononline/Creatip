@@ -13,10 +13,10 @@ collections:
     fields:
       - {label: "Contenu", name: "body", widget: "markdown"}
 
-  - name: "actualités"
+  - name: "actu"
     identifier_field: title
     label: "Actualités"
-    folder: "content/actualités"
+    folder: "content/actu"
     path: "{{slug}}/"
     media_folder: ""
     public_folder: ""
@@ -29,7 +29,7 @@ collections:
   - name: "annuaire"
     label: "Annuaire"
     folder: "content/annuaire"
-    path: "annuaire/{{name}}/"
+    path: "{{name}}/"
     media_folder: ""
     public_folder: ""
     create: true
@@ -41,7 +41,7 @@ collections:
   - name: "recherche"
     label: "Recherche"
     folder: "content/recherche"
-    path: "recherche/{{year}}/{{month}}/{{slug}}/"
+    path: "{{year}}/{{month}}/{{slug}}/"
     media_folder: ""
     public_folder: ""
     create: true
@@ -54,7 +54,6 @@ collections:
   - name: "apropos"
     label: "À Propos"
     folder: "content/apropos"
-    path: "apropos/"
     media_folder: ""
     public_folder: ""
     create: false

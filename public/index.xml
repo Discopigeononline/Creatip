@@ -6,14 +6,35 @@
     <description>Recent content in Thérapie Interpersonnelle | CREATIP on Creatip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 19 Nov 2023 00:40:04 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2024 17:10:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Percept</title>
+      <link>http://localhost:1313/recherche/2024/11/percept/a/</link>
+      <pubDate>Wed, 06 Nov 2024 17:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/2024/11/percept/a/</guid>
+      <description>Le PDF attached</description>
+    </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
       <link>http://localhost:1313/recherche/art3-copy-2/</link>
       <pubDate>Sun, 19 Nov 2023 00:40:04 -0700</pubDate>
       <guid>http://localhost:1313/recherche/art3-copy-2/</guid>
       <description>Accédez au PDF</description>
+    </item>
+    <item>
+      <title>Actu 1</title>
+      <link>http://localhost:1313/actu/actu-1/</link>
+      <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
+      <guid>http://localhost:1313/actu/actu-1/</guid>
+      <description>bienvenue sur actu 1</description>
+    </item>
+    <item>
+      <title>Actu 2</title>
+      <link>http://localhost:1313/actu/actu-2/</link>
+      <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
+      <guid>http://localhost:1313/actu/actu-2/</guid>
+      <description>bienvenue sur actu 2</description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
@@ -84,13 +105,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/apropos/</guid>
       <description>L&amp;rsquo;histoire commence au printemps 2004 à Athènes, où notre groupe de neuf amis de longue date se réunissent pour un séminaire de formation sur les psychothérapies. Ils constatent que la thérapie interpersonnelle (TIP), une nouvelle forme de psychothérapie largement pratiquée avec succès dans de nombreux pays, est peu connue et peu pratiquée en France. Pourtant, la TIP est reconnue dans la littérature médicale comme étant la psychothérapie la plus efficace dans le domaine du traitement de la dépression.</description>
-    </item>
-    <item>
-      <title>Actualités</title>
-      <link>http://localhost:1313/actu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/actu/</guid>
-      <description></description>
     </item>
     <item>
       <title>Alain Terieur</title>

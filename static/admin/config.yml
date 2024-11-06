@@ -17,7 +17,7 @@ collections:
     identifier_field: title
     label: "Actualités"
     folder: "content/actu"
-    path: "{{slug}}/"
+    path: "{{slug}}.md"
     media_folder: ""
     public_folder: ""
     create: true
@@ -41,7 +41,7 @@ collections:
   - name: "recherche"
     label: "Recherche"
     folder: "content/recherche"
-    path: "{{year}}/{{month}}/{{slug}}/"
+    path: "{{year}}/{{month}}/{{slug}}.md"
     media_folder: ""
     public_folder: ""
     create: true

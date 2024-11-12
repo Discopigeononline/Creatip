@@ -5,6 +5,17 @@ professionals:
   - name: Geo
     firstname: Dev
     email: dev.pmgeo@slmail.me
+    city: Houston
+    specialty: Snowboard
+  - name: Geo
+    firstname: Dev
+    email: dev.pmgeo@slmail.me
+    city: Rainbow City
+    specialty: Surf
+    tags:
+      - specialty: surf
+        city: Rainbow City
+      - {}
 ---
 
 {{< cards-container >}}

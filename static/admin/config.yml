@@ -8,7 +8,7 @@ collections:
 
   - name: "Index"
     label: "Page d'Accueil"
-    folder: "content/_index.md"
+    file: "content/_index.md"
     create: false
     fields:
       - {label: "Contenu", name: "body", widget: "markdown"}
@@ -26,17 +26,25 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Contenu", name: "body", widget: "markdown"}
 
+
   - name: "annuaire"
     label: "Annuaire"
     folder: "content/annuaire"
-    path: "{{name}}.md"
+    path: "_index.md"
     media_folder: ""
     public_folder: ""
-    create: true
+    create: false
     fields:
-      - {label: "Nom", name: "name", widget: "string"}
-      - {label: "Prénom", name: "firstname", widget: "string"}
-      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - label: "Professionnels"
+        name: "professionals"
+        widget: "list"
+        fields:
+          - {label: "Nom", name: "name", widget: "string"}
+          - {label: "Prénom", name: "firstname", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+
 
   - name: "recherche"
     label: "Recherche"
@@ -53,9 +61,9 @@ collections:
 
   - name: "apropos"
     label: "À Propos"
-    folder: "content/apropos.md"
+    file: "content/apropos.md"
     media_folder: ""
     public_folder: ""
-    create: true
+    create: false
     fields:
       - {label: "Contenu", name: "body", widget: "markdown"}

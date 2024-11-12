@@ -1,6 +1,45 @@
 baseURL = 'https://therapieinterpersonnelle.netlify.app/'
 languageCode = 'fr-fr'
 title = 'Creatip'
+description = 'CREATIP est une association loi 1901 de psychothérapie basée sur la recherche, formation et promotion de la thérapie interpersonnelle (TIP) en France'
 
 [params]
   dateFormat = "02 Jan 2006"
+
+# SEO Settings
+[params.seo]
+  metaDescription = "CREATIP est une association loi 1901 de psychothérapie basée sur la recherche, formation et promotion de la thérapie interpersonnelle (TIP) en France"
+  keywords = ["thérapie", "interpersonnelle", "TIP", "psychothérapie", "psychologie", "développement personnel"]
+  author = "Creatip"
+
+# Open Graph Configuration for Social Sharing
+[params.opengraph]
+  enabled = true
+  type = "website"
+  locale = "fr_FR"
+  siteName = "Creatip"
+  image = "/images/og-image.jpg"  # Assurez-vous que cette image existe
+
+# Twitter Card Configuration
+[params.twitter]
+  handle = "@votreTwitter"
+  site = "@votreSite"
+  cardType = "summary_large_image"
+
+# Sitemap Configuration
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+  exclude = ["/admin/*"]  # Exclure les pages sensibles
+
+# Robots.txt Configuration
+[robots]
+  disallow = ["/admin/"]
+  allow = ["/"]
+  sitemap = "https://therapieinterpersonnelle.netlify.app/sitemap.xml"
+
+# Accessibility Settings
+[params.accessibility]
+  defaultAltText = "Site "
+  skipLinks = true  # Ajoute des liens pour sauter la navigation

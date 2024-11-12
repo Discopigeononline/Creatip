@@ -1,15 +1,17 @@
 {{ define "main" }}
 <div class="content-wrap">
   {{ .Content }}
+
+  <section class="list-items-container">
+    <ul class="list-items">
+      {{ range .Pages }}
+      <li>
+        <a class="item" href="{{ .RelPermalink }}" aria-label="Read more about {{ .LinkTitle }}">
+          <span>{{ .LinkTitle }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
 </div>
-<section class="list-items-container">
-  <ul class="list-items">
-    {{ range .Pages }}
-    <li>
-      <a class="item" href="{{ .RelPermalink }}" aria-label="Read more about {{ .LinkTitle }}">
-       <span>{{ .LinkTitle }}</span>
-    </a></li>
-    {{ end }}
-  </ul>
-</section>
 {{ end }}

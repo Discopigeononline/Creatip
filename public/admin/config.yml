@@ -53,7 +53,7 @@ collections:
 
   - name: "apropos"
     label: "À Propos"
-    folder: "content/apropos"
+    folder: "content/apropos.md"
     media_folder: ""
     public_folder: ""
     create: false

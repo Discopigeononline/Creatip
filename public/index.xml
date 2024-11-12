@@ -6,8 +6,22 @@
     <description>Recent content in Thérapie Interpersonnelle | CREATIP on Creatip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 06 Nov 2024 17:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2024 18:33:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recherche importante</title>
+      <link>http://localhost:1313/recherche/2024/11/recherche-importante-md/</link>
+      <pubDate>Wed, 06 Nov 2024 18:33:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/2024/11/recherche-importante-md/</guid>
+      <description>Du contenu de la recherche</description>
+    </item>
+    <item>
+      <title>Actu 3</title>
+      <link>http://localhost:1313/actu/actu-3-md/</link>
+      <pubDate>Wed, 06 Nov 2024 18:32:00 +0000</pubDate>
+      <guid>http://localhost:1313/actu/actu-3-md/</guid>
+      <description>Benvenutto alla actualità 3</description>
+    </item>
     <item>
       <title>Percept</title>
       <link>http://localhost:1313/recherche/2024/11/percept/a/</link>

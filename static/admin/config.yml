@@ -24,7 +24,7 @@ collections:
         label: "Annuaire"
         file: "content/annuaire/_index.md"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Titre", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - label: "Professionnels"
             name: "professionals"
@@ -33,6 +33,27 @@ collections:
               - {label: "Nom", name: "name", widget: "string"}
               - {label: "Prénom", name: "firstname", widget: "string"}
               - {label: "Email", name: "email", widget: "string"}
+              - {label: "Spécialité", name: "specialty", widget: "string"}
+              - {label: "Ville", name: "city", widget: "string"}
+              - name: "tags"
+                label: "Tags"
+                widget: "list"
+                fields:
+                  - label: "Specialty"
+                    name: "specialty"
+                    widget: "string"
+                    required: false
+                  - label: "City"
+                    name: "city"
+                    widget: "string"
+                    required: false
+
+  - name: "tags"
+    label: "Tags"
+    folder: "content/tags"
+    create: true
+    fields:
+      - {label: "Tag", name: "tag", widget: "string"}
 
   - name: "actu"
     label: "Actualités"

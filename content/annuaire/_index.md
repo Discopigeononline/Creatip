@@ -1,6 +1,10 @@
 ---
 title: Annuaire
 description: Annuaire des professionnels de la thérapie interpersonnelle.
+professionals:
+  - name: Geo
+    firstname: Dev
+    email: dev.pmgeo@slmail.me
 ---
 
 {{< cards-container >}}

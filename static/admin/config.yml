@@ -27,7 +27,7 @@ collections:
           - {label: "Titre", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - label: "Professionnels"
-            name: "professionals"
+            name: "professional-cards"
             widget: "list"
             fields:
               - {label: "Nom", name: "name", widget: "string"}

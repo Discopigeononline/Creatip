@@ -5,65 +5,71 @@ backend:
 media_folder: "static/images"
 public_folder: "images"
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "index"
+        label: "Page d'Accueil"
+        file: "content/_index.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
 
-  - name: "Index"
-    label: "Page d'Accueil"
-    file: "content/_index.md"
-    create: false
+      - name: "apropos"
+        label: "À Propos"
+        file: "content/apropos.md"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
+      - name: "annuaire"
+        label: "Annuaire"
+        file: "content/annuaire/_index.md"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Professionnels"
+            name: "professionals"
+            widget: "list"
+            fields:
+              - {label: "Nom", name: "name", widget: "string"}
+              - {label: "Prénom", name: "firstname", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Spécialité", name: "specialty", widget: "string"}
+              - {label: "Ville", name: "city", widget: "string"}
+              - name: "tags"
+                label: "Tags"
+                widget: "list"
+                fields:
+                  - label: "Specialty"
+                    name: "specialty"
+                    widget: "string"
+                    required: false
+                  - label: "City"
+                    name: "city"
+                    widget: "string"
+                    required: false
+
+  - name: "tags"
+    label: "Tags"
+    folder: "content/tags"
+    create: true
     fields:
-      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Tag", name: "tag", widget: "string"}
 
   - name: "actu"
-    identifier_field: title
     label: "Actualités"
     folder: "content/actu"
-    path: "{{slug}}.md"
-    media_folder: ""
-    public_folder: ""
     create: true
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Contenu", name: "body", widget: "markdown"}
 
-
-  - name: "annuaire"
-    label: "Annuaire"
-    folder: "content/annuaire"
-    path: "_index.md"
-    media_folder: ""
-    public_folder: ""
-    create: false
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - label: "Professionnels"
-        name: "professionals"
-        widget: "list"
-        fields:
-          - {label: "Nom", name: "name", widget: "string"}
-          - {label: "Prénom", name: "firstname", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-
-
   - name: "recherche"
     label: "Recherche"
     folder: "content/recherche"
-    path: "{{year}}/{{month}}/{{slug}}.md"
-    media_folder: ""
-    public_folder: ""
     create: true
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Contenu", name: "body", widget: "markdown"}
       - {label: "Document", name: "document", widget: "file"}
-
-  - name: "apropos"
-    label: "À Propos"
-    file: "content/apropos.md"
-    media_folder: ""
-    public_folder: ""
-    create: false
-    fields:
-      - {label: "Contenu", name: "body", widget: "markdown"}

@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/actu/</loc>
+    <lastmod>2024-11-12T19:09:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/actu/newz-du-jour/</loc>
+    <lastmod>2024-11-12T19:09:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-12T19:09:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/recherche/</loc>
     <lastmod>2024-11-06T18:33:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -12,17 +27,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-06T18:33:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://localhost:1313/actu/actu-3-md/</loc>
-    <lastmod>2024-11-06T18:32:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/actu/</loc>
     <lastmod>2024-11-06T18:32:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

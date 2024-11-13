@@ -21,6 +21,15 @@ professional-cards:
     email: tom.haitto@slmail.me
     city: Paris
     specialty: Magic
+  - name: Golo
+    firstname: Henri
+    email: h.golo@gmail.com
+    specialty: Stand-up
+    city: Lisbonne
+    tags:
+      - specialty: Stand-up
+        city: Lisbonne
+      - {}
 ---
 
 {{< cards-container >}}

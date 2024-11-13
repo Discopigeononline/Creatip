@@ -16,6 +16,11 @@ professionals:
       - specialty: surf
         city: Rainbow City
       - {}
+  - name: Haitto
+    firstname: Tom
+    email: tom.haitto@slmail.me
+    city: Paris
+    specialty: Magic
 ---
 
 {{< cards-container >}}

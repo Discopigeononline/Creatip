@@ -1,0 +1,57 @@
+name: Monitor Netlify Token Expiration
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  
+  workflow_dispatch:      
+
+jobs:
+  check-token-expiration:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check token expiration
+        id: check-expiration
+        run: |
+          # Get current date in seconds since epoch
+          current_date=$(date +%s)
+          
+          # Calculate 14 days in seconds
+          warning_period=$((14 * 24 * 60 * 60))
+          
+          # Get token creation date from environment
+          token_creation="${{ secrets.NETLIFY_TOKEN_CREATED }}"
+          # Calculate expiration date (90 days from creation)
+          expiration_date=$(date -d "$token_creation + 90 days" +%s)
+          
+          # Calculate days until expiration
+          days_remaining=$(( ($expiration_date - $current_date) / (24 * 60 * 60) ))
+          
+          if [ $days_remaining -le 14 ]; then
+            echo "::warning::Netlify token expires in $days_remaining days"
+            echo "needs_rotation=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send notification
+        if: steps.check-expiration.outputs.needs_rotation == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🔑 Netlify Deploy Token Needs Rotation',
+              body: `
+              # Netlify Token Rotation Required
+              
+              The Netlify deploy token will expire soon. Please follow these steps to rotate it:
+              
+              1. Generate new token in Netlify (User Settings → Applications → New access token)
+              2. Update GitHub secret NETLIFY_AUTH_TOKEN with new token
+              3. Update NETLIFY_TOKEN_CREATED secret with current date
+              4. Test deployment with new token
+              5. Revoke old token in Netlify
+              
+              [Netlify Access Tokens](https://app.netlify.com/user/applications)
+              `
+            });

@@ -31,9 +31,20 @@ professional-cards:
         city: Lisbonne
       - {}
 ---
-
 {{< cards-container >}}
-  {{ range .Params.professional-cards }}
-  {{< professional-card name="{{ .name }}" firstname="{{ .firstname }}" email="{{ .email }}" city="{{ .city }}" specialty="{{ .specialty }}" tags="{{ .tags }}">}}
-  {{ end }}
+
+  {{< professional-card >}}
+  ### Marie Dupont
+  - Spécialité: Thérapie Interpersonnelle
+  - Ville: Paris
+  - Email: [marie.dupont@example.com](mailto:marie.dupont@example.com)
+  {{< /professional-card >}}
+
+  {{< professional-card >}}
+  ### Jean Martin
+  - Spécialité: Thérapie Interpersonnelle, TCC
+  - Ville: Lyon
+  - Email: [jean.martin@example.com](mailto:jean.martin@example.com)
+  {{< /professional-card >}}
+
 {{< /cards-container >}}

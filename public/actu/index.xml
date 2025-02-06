@@ -2,38 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Actualités on Creatip</title>
-    <link>http://localhost:1313/actu/</link>
+    <link>https://therapieinterpersonnelle.netlify.app/actu/</link>
     <description>Recent content in Actualités on Creatip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Tue, 12 Nov 2024 19:09:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/actu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Nov 2024 18:10:00 +0000</lastBuildDate>
+    <atom:link href="https://therapieinterpersonnelle.netlify.app/actu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buongiorno</title>
+      <link>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</link>
+      <pubDate>Wed, 13 Nov 2024 18:10:00 +0000</pubDate>
+      <guid>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</guid>
+      <description>Ciao, è la notizia della sierra</description>
+    </item>
+    <item>
+      <title>Yo</title>
+      <link>https://therapieinterpersonnelle.netlify.app/actu/yo/</link>
+      <pubDate>Wed, 13 Nov 2024 18:02:00 +0000</pubDate>
+      <guid>https://therapieinterpersonnelle.netlify.app/actu/yo/</guid>
+      <description>Whaabboutnow?</description>
+    </item>
     <item>
       <title>Newz du jour</title>
-      <link>http://localhost:1313/actu/newz-du-jour/</link>
+      <link>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</link>
       <pubDate>Tue, 12 Nov 2024 19:09:00 +0000</pubDate>
-      <guid>http://localhost:1313/actu/newz-du-jour/</guid>
+      <guid>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</guid>
       <description>Bonjour.</description>
     </item>
     <item>
       <title>Actu 3</title>
-      <link>http://localhost:1313/actu/actu-3-md/</link>
+      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</link>
       <pubDate>Wed, 06 Nov 2024 18:32:00 +0000</pubDate>
-      <guid>http://localhost:1313/actu/actu-3-md/</guid>
+      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</guid>
       <description>Benvenutto alla actualità 3</description>
     </item>
     <item>
       <title>Actu 1</title>
-      <link>http://localhost:1313/actu/actu-1/</link>
+      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>http://localhost:1313/actu/actu-1/</guid>
+      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</guid>
       <description>bienvenue sur actu 1</description>
     </item>
     <item>
       <title>Actu 2</title>
-      <link>http://localhost:1313/actu/actu-2/</link>
+      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>http://localhost:1313/actu/actu-2/</guid>
+      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</guid>
       <description>bienvenue sur actu 2</description>
     </item>
   </channel>

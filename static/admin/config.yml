@@ -1,9 +1,11 @@
 backend:
   name: git-gateway
-  repo: 'https://github.com/Discopigeononline/Creatip'
+  repo: "https://github.com/Discopigeononline/Creatip"
   branch: main
+
 media_folder: "static/images"
 public_folder: "images"
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -12,41 +14,54 @@ collections:
         label: "Page d'Accueil"
         file: "content/_index.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - label: "Contenu"
+            name: "body"
+            widget: "markdown"
 
       - name: "apropos"
         label: "À Propos"
         file: "content/apropos.md"
         fields:
-          - {label: "Contenu", name: "body", widget: "markdown"}
+          - label: "Contenu"
+            name: "body"
+            widget: "markdown"
 
       - name: "annuaire"
         label: "Annuaire"
         file: "content/annuaire/_index.md"
         fields:
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
+          - label: "Titre"
+            name: "title"
+            widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "text"
           - label: "Professionnels"
             name: "professional-cards"
             widget: "list"
             fields:
-              - {label: "Nom", name: "name", widget: "string"}
-              - {label: "Prénom", name: "firstname", widget: "string"}
-              - {label: "Email", name: "email", widget: "string"}
-              - {label: "Spécialité", name: "specialty", widget: "string"}
-              - {label: "Ville", name: "city", widget: "string"}
-              - name: "tags"
-                label: "Tags"
+              - label: "Nom"
+                name: "name"
+                widget: "string"
+              - label: "Prénom"
+                name: "firstname"
+                widget: "string"
+              - label: "Email"
+                name: "email"
+                widget: "string"
+              - label: "Spécialité"
+                name: "specialty"
+                widget: "string"
+              - label: "Ville"
+                name: "city"
+                widget: "string"
+              - label: "Tags"
+                name: "tags"
                 widget: "list"
                 fields:
-                  - label: "Specialty"
-                    name: "specialty"
+                  - label: "Tag"
+                    name: "tag"
                     widget: "string"
-                    required: false
-                  - label: "City"
-                    name: "city"
-                    widget: "string"
-                    required: false
 
   - name: "tags"
     label: "Tags"

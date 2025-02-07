@@ -1,6 +1,6 @@
----
-title: Recherche importante
-date: 2024-11-06T18:33:00.000Z
-document: bernard_et_al_2024_frontiers_in_public_health.pdf
----
-Du contenu de la recherche 
++++
+title="Du contenu de la recherche"
+date="2024-11-11T00:00:00.000Z"
+document="images/document-1.pdf"
++++
+Du contenu de la recherche

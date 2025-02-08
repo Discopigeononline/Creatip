@@ -2,146 +2,161 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/</loc>
+    <loc>http://localhost:1313/recherche/new-study/</loc>
+    <lastmod>2025-02-06T19:43:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/recherche/testfrontmatter/</loc>
+    <lastmod>2025-02-06T19:43:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-06T19:43:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/actu/</loc>
+    <lastmod>2025-02-06T18:24:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</loc>
+    <lastmod>2025-02-06T18:24:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/actu/buongiorno/</loc>
     <lastmod>2024-11-13T18:10:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</loc>
-    <lastmod>2024-11-13T18:10:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/</loc>
-    <lastmod>2024-11-13T18:10:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/</loc>
+    <loc>http://localhost:1313/recherche/</loc>
     <lastmod>2024-11-13T18:03:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/yo/</loc>
+    <loc>http://localhost:1313/actu/yo/</loc>
     <lastmod>2024-11-13T18:02:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</loc>
+    <loc>http://localhost:1313/actu/newz-du-jour/</loc>
     <lastmod>2024-11-12T19:09:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/2024/11/recherche-importante-md/</loc>
-    <lastmod>2024-11-06T18:33:00+00:00</lastmod>
+    <loc>http://localhost:1313/recherche/2024/11/recherche-importante-md/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</loc>
+    <loc>http://localhost:1313/actu/actu-3-md/</loc>
     <lastmod>2024-11-06T18:32:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/2024/11/percept/a/</loc>
+    <loc>http://localhost:1313/recherche/2024/11/percept/a/</loc>
     <lastmod>2024-11-06T17:10:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-2/</loc>
+    <loc>http://localhost:1313/recherche/art3-copy-2/</loc>
     <lastmod>2023-11-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</loc>
+    <loc>http://localhost:1313/actu/actu-1/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</loc>
+    <loc>http://localhost:1313/actu/actu-2/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-3/</loc>
+    <loc>http://localhost:1313/recherche/art3-copy-3/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-4/</loc>
+    <loc>http://localhost:1313/recherche/art3-copy-4/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-5/</loc>
+    <loc>http://localhost:1313/recherche/art3-copy-5/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy/</loc>
+    <loc>http://localhost:1313/recherche/art3-copy/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/art3/</loc>
+    <loc>http://localhost:1313/recherche/art3/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/article1/</loc>
+    <loc>http://localhost:1313/recherche/article1/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/recherche/article2/</loc>
+    <loc>http://localhost:1313/recherche/article2/</loc>
     <lastmod>2023-10-19T00:40:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/annuaire/geo-md/</loc>
+    <loc>http://localhost:1313/annuaire/geo-md/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/formation/liens/</loc>
+    <loc>http://localhost:1313/formation/liens/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/formation/programme/</loc>
+    <loc>http://localhost:1313/formation/programme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/apropos/</loc>
+    <loc>http://localhost:1313/apropos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/annuaire/alain_terieur/</loc>
+    <loc>http://localhost:1313/annuaire/alain_terieur/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/annuaire/alex_terieur/</loc>
+    <loc>http://localhost:1313/annuaire/alex_terieur/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/annuaire/</loc>
+    <loc>http://localhost:1313/annuaire/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/formation/</loc>
+    <loc>http://localhost:1313/formation/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/annuaire/henri_golo/</loc>
+    <loc>http://localhost:1313/annuaire/henri_golo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://therapieinterpersonnelle.netlify.app/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

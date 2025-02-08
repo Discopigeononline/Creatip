@@ -1,5 +1,13 @@
 {{ define "main" }}
 <div class="content-wrap-post">
   {{ .Content }}
+  {{ if .Params.document }}
+  <p>
+    <a href="{{ .Params.document }}" target="_blank" rel="noopener noreferrer">
+      Download PDF
+    </a>
+  </p>
+  {{ end }}
+
 </div>
 {{ end }}

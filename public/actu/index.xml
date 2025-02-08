@@ -2,53 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Actualités on Creatip</title>
-    <link>https://therapieinterpersonnelle.netlify.app/actu/</link>
+    <link>http://localhost:1313/actu/</link>
     <description>Recent content in Actualités on Creatip</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 13 Nov 2024 18:10:00 +0000</lastBuildDate>
-    <atom:link href="https://therapieinterpersonnelle.netlify.app/actu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Feb 2025 18:24:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/actu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News du le 6 février</title>
+      <link>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</link>
+      <pubDate>Thu, 06 Feb 2025 18:24:00 +0000</pubDate>
+      <guid>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</guid>
+      <description>&lt;p&gt;Bonjour, nouveau bonjour aujourd&amp;rsquo;hui&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Buongiorno</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</link>
+      <link>http://localhost:1313/actu/buongiorno/</link>
       <pubDate>Wed, 13 Nov 2024 18:10:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</guid>
-      <description>Ciao, è la notizia della sierra</description>
+      <guid>http://localhost:1313/actu/buongiorno/</guid>
+      <description>&lt;p&gt;Ciao, è la notizia della sierra&lt;/p&gt;</description>
     </item>
     <item>
       <title>Yo</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/yo/</link>
+      <link>http://localhost:1313/actu/yo/</link>
       <pubDate>Wed, 13 Nov 2024 18:02:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/yo/</guid>
-      <description>Whaabboutnow?</description>
+      <guid>http://localhost:1313/actu/yo/</guid>
+      <description>&lt;p&gt;Whaabboutnow?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Newz du jour</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</link>
+      <link>http://localhost:1313/actu/newz-du-jour/</link>
       <pubDate>Tue, 12 Nov 2024 19:09:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</guid>
-      <description>Bonjour.</description>
+      <guid>http://localhost:1313/actu/newz-du-jour/</guid>
+      <description>&lt;p&gt;Bonjour.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Actu 3</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</link>
+      <link>http://localhost:1313/actu/actu-3-md/</link>
       <pubDate>Wed, 06 Nov 2024 18:32:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</guid>
-      <description>Benvenutto alla actualità 3</description>
+      <guid>http://localhost:1313/actu/actu-3-md/</guid>
+      <description>&lt;p&gt;Benvenutto alla actualità 3&lt;/p&gt;</description>
     </item>
     <item>
       <title>Actu 1</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</link>
+      <link>http://localhost:1313/actu/actu-1/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</guid>
-      <description>bienvenue sur actu 1</description>
+      <guid>http://localhost:1313/actu/actu-1/</guid>
+      <description>&lt;p&gt;bienvenue sur actu 1&lt;/p&gt;</description>
     </item>
     <item>
       <title>Actu 2</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</link>
+      <link>http://localhost:1313/actu/actu-2/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</guid>
-      <description>bienvenue sur actu 2</description>
+      <guid>http://localhost:1313/actu/actu-2/</guid>
+      <description>&lt;p&gt;bienvenue sur actu 2&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

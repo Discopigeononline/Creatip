@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Annuaire on Creatip</title>
-    <link>https://therapieinterpersonnelle.netlify.app/annuaire/</link>
+    <link>http://localhost:1313/annuaire/</link>
     <description>Recent content in Annuaire on Creatip</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>fr-fr</language>
-    <atom:link href="https://therapieinterpersonnelle.netlify.app/annuaire/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/annuaire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/geo-md/</link>
+      <link>http://localhost:1313/annuaire/geo-md/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/geo-md/</guid>
+      <guid>http://localhost:1313/annuaire/geo-md/</guid>
       <description></description>
     </item>
     <item>
       <title>Alain Terieur</title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/alain_terieur/</link>
+      <link>http://localhost:1313/annuaire/alain_terieur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/alain_terieur/</guid>
+      <guid>http://localhost:1313/annuaire/alain_terieur/</guid>
       <description></description>
     </item>
     <item>
       <title>Alex Terieur</title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/alex_terieur/</link>
+      <link>http://localhost:1313/annuaire/alex_terieur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/alex_terieur/</guid>
+      <guid>http://localhost:1313/annuaire/alex_terieur/</guid>
       <description></description>
     </item>
     <item>
       <title>Henri Golo</title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/henri_golo/</link>
+      <link>http://localhost:1313/annuaire/henri_golo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/henri_golo/</guid>
+      <guid>http://localhost:1313/annuaire/henri_golo/</guid>
       <description></description>
     </item>
   </channel>

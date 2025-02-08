@@ -2,178 +2,199 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thérapie Interpersonnelle | CREATIP on Creatip</title>
-    <link>https://therapieinterpersonnelle.netlify.app/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Thérapie Interpersonnelle | CREATIP on Creatip</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 13 Nov 2024 18:10:00 +0000</lastBuildDate>
-    <atom:link href="https://therapieinterpersonnelle.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Feb 2025 19:43:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Study</title>
+      <link>http://localhost:1313/recherche/new-study/</link>
+      <pubDate>Thu, 06 Feb 2025 19:43:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/new-study/</guid>
+      <description>&lt;p&gt;Check this fresh new study oh&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test FrontMatter</title>
+      <link>http://localhost:1313/recherche/testfrontmatter/</link>
+      <pubDate>Thu, 06 Feb 2025 19:43:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/testfrontmatter/</guid>
+      <description>&lt;p&gt;Check this fresh new study oh&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>News du le 6 février</title>
+      <link>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</link>
+      <pubDate>Thu, 06 Feb 2025 18:24:00 +0000</pubDate>
+      <guid>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</guid>
+      <description>&lt;p&gt;Bonjour, nouveau bonjour aujourd&amp;rsquo;hui&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Buongiorno</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</link>
+      <link>http://localhost:1313/actu/buongiorno/</link>
       <pubDate>Wed, 13 Nov 2024 18:10:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/buongiorno/</guid>
-      <description>Ciao, è la notizia della sierra</description>
+      <guid>http://localhost:1313/actu/buongiorno/</guid>
+      <description>&lt;p&gt;Ciao, è la notizia della sierra&lt;/p&gt;</description>
     </item>
     <item>
       <title>Yo</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/yo/</link>
+      <link>http://localhost:1313/actu/yo/</link>
       <pubDate>Wed, 13 Nov 2024 18:02:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/yo/</guid>
-      <description>Whaabboutnow?</description>
+      <guid>http://localhost:1313/actu/yo/</guid>
+      <description>&lt;p&gt;Whaabboutnow?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Newz du jour</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</link>
+      <link>http://localhost:1313/actu/newz-du-jour/</link>
       <pubDate>Tue, 12 Nov 2024 19:09:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/newz-du-jour/</guid>
-      <description>Bonjour.</description>
+      <guid>http://localhost:1313/actu/newz-du-jour/</guid>
+      <description>&lt;p&gt;Bonjour.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Recherche importante</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/2024/11/recherche-importante-md/</link>
-      <pubDate>Wed, 06 Nov 2024 18:33:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/2024/11/recherche-importante-md/</guid>
-      <description>Du contenu de la recherche</description>
+      <title>Du contenu de la recherche</title>
+      <link>http://localhost:1313/recherche/2024/11/recherche-importante-md/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/recherche/2024/11/recherche-importante-md/</guid>
+      <description>&lt;p&gt;Du contenu de la recherche&lt;/p&gt;</description>
     </item>
     <item>
       <title>Actu 3</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</link>
+      <link>http://localhost:1313/actu/actu-3-md/</link>
       <pubDate>Wed, 06 Nov 2024 18:32:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-3-md/</guid>
-      <description>Benvenutto alla actualità 3</description>
+      <guid>http://localhost:1313/actu/actu-3-md/</guid>
+      <description>&lt;p&gt;Benvenutto alla actualità 3&lt;/p&gt;</description>
     </item>
     <item>
       <title>Percept</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/2024/11/percept/a/</link>
+      <link>http://localhost:1313/recherche/2024/11/percept/a/</link>
       <pubDate>Wed, 06 Nov 2024 17:10:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/2024/11/percept/a/</guid>
-      <description>Le PDF attached</description>
+      <guid>http://localhost:1313/recherche/2024/11/percept/a/</guid>
+      <description>&lt;p&gt;Le PDF attached&lt;/p&gt;</description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-2/</link>
+      <link>http://localhost:1313/recherche/art3-copy-2/</link>
       <pubDate>Sun, 19 Nov 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-2/</guid>
-      <description>Accédez au PDF</description>
+      <guid>http://localhost:1313/recherche/art3-copy-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/Bernard_et_al_2024_Frontiers_in_public_health.pdf&#34;&gt;Accédez au PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Actu 1</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</link>
+      <link>http://localhost:1313/actu/actu-1/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-1/</guid>
-      <description>bienvenue sur actu 1</description>
+      <guid>http://localhost:1313/actu/actu-1/</guid>
+      <description>&lt;p&gt;bienvenue sur actu 1&lt;/p&gt;</description>
     </item>
     <item>
       <title>Actu 2</title>
-      <link>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</link>
+      <link>http://localhost:1313/actu/actu-2/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/actu/actu-2/</guid>
-      <description>bienvenue sur actu 2</description>
+      <guid>http://localhost:1313/actu/actu-2/</guid>
+      <description>&lt;p&gt;bienvenue sur actu 2&lt;/p&gt;</description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-3/</link>
+      <link>http://localhost:1313/recherche/art3-copy-3/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-3/</guid>
+      <guid>http://localhost:1313/recherche/art3-copy-3/</guid>
       <description></description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-4/</link>
+      <link>http://localhost:1313/recherche/art3-copy-4/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-4/</guid>
+      <guid>http://localhost:1313/recherche/art3-copy-4/</guid>
       <description></description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-5/</link>
+      <link>http://localhost:1313/recherche/art3-copy-5/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy-5/</guid>
+      <guid>http://localhost:1313/recherche/art3-copy-5/</guid>
       <description></description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy/</link>
+      <link>http://localhost:1313/recherche/art3-copy/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/art3-copy/</guid>
+      <guid>http://localhost:1313/recherche/art3-copy/</guid>
       <description></description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/art3/</link>
+      <link>http://localhost:1313/recherche/art3/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/art3/</guid>
+      <guid>http://localhost:1313/recherche/art3/</guid>
       <description></description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/article1/</link>
+      <link>http://localhost:1313/recherche/article1/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/article1/</guid>
-      <description>Once upon a time</description>
+      <guid>http://localhost:1313/recherche/article1/</guid>
+      <description>&lt;p&gt;Once upon a time&lt;/p&gt;</description>
     </item>
     <item>
       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>
-      <link>https://therapieinterpersonnelle.netlify.app/recherche/article2/</link>
+      <link>http://localhost:1313/recherche/article2/</link>
       <pubDate>Thu, 19 Oct 2023 00:40:04 -0700</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/recherche/article2/</guid>
-      <description>Hello there</description>
+      <guid>http://localhost:1313/recherche/article2/</guid>
+      <description>&lt;p&gt;Hello there&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/geo-md/</link>
+      <link>http://localhost:1313/annuaire/geo-md/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/geo-md/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://therapieinterpersonnelle.netlify.app/formation/liens/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/formation/liens/</guid>
+      <guid>http://localhost:1313/annuaire/geo-md/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://therapieinterpersonnelle.netlify.app/formation/programme/</link>
+      <link>http://localhost:1313/formation/liens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/formation/programme/</guid>
+      <guid>http://localhost:1313/formation/liens/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/formation/programme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/formation/programme/</guid>
       <description></description>
     </item>
     <item>
       <title>À propos</title>
-      <link>https://therapieinterpersonnelle.netlify.app/apropos/</link>
+      <link>http://localhost:1313/apropos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/apropos/</guid>
-      <description>L&amp;rsquo;histoire commence au printemps 2004 à Athènes, où notre groupe de neuf amis de longue date se réunissent pour un séminaire de formation sur les psychothérapies. Ils constatent que la thérapie interpersonnelle (TIP), une nouvelle forme de psychothérapie largement pratiquée avec succès dans de nombreux pays, est peu connue et peu pratiquée en France. Pourtant, la TIP est reconnue dans la littérature médicale comme étant la psychothérapie la plus efficace dans le domaine du traitement de la dépression.</description>
+      <guid>http://localhost:1313/apropos/</guid>
+      <description>&lt;p&gt;L&amp;rsquo;histoire commence au printemps 2004 à Athènes, où notre groupe de neuf amis de longue date se réunissent pour un séminaire de formation sur les psychothérapies. Ils constatent que la thérapie interpersonnelle (TIP), une nouvelle forme de psychothérapie largement pratiquée avec succès dans de nombreux pays, est peu connue et peu pratiquée en France. Pourtant, la TIP est reconnue dans la littérature médicale comme étant la psychothérapie la plus efficace dans le domaine du traitement de la dépression.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alain Terieur</title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/alain_terieur/</link>
+      <link>http://localhost:1313/annuaire/alain_terieur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/alain_terieur/</guid>
+      <guid>http://localhost:1313/annuaire/alain_terieur/</guid>
       <description></description>
     </item>
     <item>
       <title>Alex Terieur</title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/alex_terieur/</link>
+      <link>http://localhost:1313/annuaire/alex_terieur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/alex_terieur/</guid>
+      <guid>http://localhost:1313/annuaire/alex_terieur/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://therapieinterpersonnelle.netlify.app/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/contact/</guid>
-      <description>creatip(at)annecy.com</description>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;creatip(at)annecy.com&lt;/p&gt;</description>
     </item>
     <item>
       <title>Henri Golo</title>
-      <link>https://therapieinterpersonnelle.netlify.app/annuaire/henri_golo/</link>
+      <link>http://localhost:1313/annuaire/henri_golo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://therapieinterpersonnelle.netlify.app/annuaire/henri_golo/</guid>
+      <guid>http://localhost:1313/annuaire/henri_golo/</guid>
       <description></description>
     </item>
   </channel>

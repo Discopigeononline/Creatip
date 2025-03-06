@@ -87,4 +87,8 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Document", name: "document", widget: "file"}
+      - label: "Document"
+        name: "document"
+        widget: "file"
+        media_folder: "static/documents"
+        public_folder: "/documents"

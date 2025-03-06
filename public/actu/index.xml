@@ -6,14 +6,28 @@
     <description>Recent content in Actualités on Creatip</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Thu, 06 Feb 2025 18:24:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2025 19:39:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/actu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Titre</title>
+      <link>http://localhost:1313/actu/titre/</link>
+      <pubDate>Sat, 08 Feb 2025 19:39:00 +0000</pubDate>
+      <guid>http://localhost:1313/actu/titre/</guid>
+      <description>&lt;p&gt;New content&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>local actu</title>
+      <link>http://localhost:1313/actu/local-actu/</link>
+      <pubDate>Sat, 08 Feb 2025 18:39:00 +0000</pubDate>
+      <guid>http://localhost:1313/actu/local-actu/</guid>
+      <description>&lt;p&gt;Act Now&lt;/p&gt;</description>
+    </item>
     <item>
       <title>News du le 6 février</title>
       <link>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</link>
       <pubDate>Thu, 06 Feb 2025 18:24:00 +0000</pubDate>
       <guid>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</guid>
-      <description>&lt;p&gt;Bonjour, nouveau bonjour aujourd&amp;rsquo;hui&lt;/p&gt;</description>
+      <description>&lt;p&gt;Bonjour, nouveau message aujourd&amp;rsquo;hui 22&lt;/p&gt;</description>
     </item>
     <item>
       <title>Buongiorno</title>

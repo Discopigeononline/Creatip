@@ -7,6 +7,12 @@
       Download PDF
     </a>
   </p>
+  {{ else if .Params.pdf }}
+  <p>
+    <a href="{{ .Params.pdf }}" target="_blank" rel="noopener noreferrer">
+      Download PDF
+    </a>
+  </p>
   {{ end }}
 
 </div>

@@ -1,0 +1,567 @@
+[1mdiff --git a/CLAUDE.md b/CLAUDE.md[m
+[1mdeleted file mode 100644[m
+[1mindex 7914540..0000000[m
+[1m--- a/CLAUDE.md[m
+[1m+++ /dev/null[m
+[36m@@ -1,31 +0,0 @@[m
+[31m-# CREATIP Hugo Site Guide[m
+[31m-[m
+[31m-## Commands[m
+[31m-- Build: `hugo --minify`[m
+[31m-- Start dev server: `hugo server -D` (includes draft content)[m
+[31m-- Clean build: `rm -rf public/ && hugo --minify`[m
+[31m-- Deploy: Automated via GitHub to Netlify[m
+[31m-[m
+[31m-## Configuration[m
+[31m-- Site config: `config.toml` (baseURL, title, params)[m
+[31m-- CMS config: `static/admin/config.yml` (Decap CMS settings)[m
+[31m-[m
+[31m-## Content Structure[m
+[31m-- Content in Markdown under `/content/` directory[m
+[31m-- French language: `languageCode = 'fr-fr'`[m
+[31m-- Sections: actu, annuaire, recherche, formation[m
+[31m-- Always use YAML frontmatter (---) not TOML (+++)[m
+[31m-- Use kebab-case for filenames (e.g., my-article.md)[m
+[31m-[m
+[31m-## CMS Guidelines[m
+[31m-- Document files go in `/static/documents/`[m
+[31m-- Image files go in `/static/images/`[m
+[31m-- Research articles should use `document` field for PDFs[m
+[31m-- All CMS fields must match template parameters exactly[m
+[31m-[m
+[31m-## Style Guidelines[m
+[31m-- HTML templates in `/layouts/`[m
+[31m-- SCSS styling in `/assets/sass/main.scss`[m
+[31m-- Use Hugo partials for reusable components[m
+[31m-- Follow Hugo naming conventions (kebab-case for files)[m
+[31m-- Shortcodes in `/layouts/shortcodes/`[m
+\ No newline at end of file[m
+[1mdiff --git a/content/recherche/2024/11/bernard_et_al_2024_frontiers_in_public_health.pdf b/content/recherche/2024/11/bernard_et_al_2024_frontiers_in_public_health.pdf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e29a522[m
+Binary files /dev/null and b/content/recherche/2024/11/bernard_et_al_2024_frontiers_in_public_health.pdf differ
+[1mdiff --git a/content/recherche/2024/11/percept/A.md b/content/recherche/2024/11/percept/A.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..37fef05[m
+[1m--- /dev/null[m
+[1m+++ b/content/recherche/2024/11/percept/A.md[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: Percept[m
+[32m+[m[32mdate: 2024-11-06T17:10:00.000Z[m
+[32m+[m[32mdocument: bernard_et_al_2024_frontiers_in_public_health.pdf[m
+[32m+[m[32m---[m
+[32m+[m[32mLe PDF attached[m
+[1mdiff --git a/content/recherche/2024/11/percept/bernard_et_al_2024_frontiers_in_public_health.pdf b/content/recherche/2024/11/percept/bernard_et_al_2024_frontiers_in_public_health.pdf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e29a522[m
+Binary files /dev/null and b/content/recherche/2024/11/percept/bernard_et_al_2024_frontiers_in_public_health.pdf differ
+[1mdiff --git a/content/recherche/2024/11/recherche-importante-md.md b/content/recherche/2024/11/recherche-importante-md.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e597e63[m
+[1m--- /dev/null[m
+[1m+++ b/content/recherche/2024/11/recherche-importante-md.md[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m+++[m
+[32m+[m[32mtitle="Du contenu de la recherche"[m
+[32m+[m[32mdate="2024-11-11T00:00:00.000Z"[m
+[32m+[m[32mdocument="images/document-1.pdf"[m
+[32m+[m[32m+++[m
+[32m+[m[32mDu contenu de la recherche[m
+[1mdiff --git a/content/recherche/latest-study-from-the-hood.md b/content/recherche/latest-study-from-the-hood.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..756a01c[m
+[1m--- /dev/null[m
+[1m+++ b/content/recherche/latest-study-from-the-hood.md[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m---[m
+[32m+[m[32mtitle: Latest study from the hood[m
+[32m+[m[32mdate: 2025-03-06T18:15:00.000Z[m
+[32m+[m[32mdocument: /documents/2f557304-5362-4bf1-a344-30073cf43c07.pdf[m
+[32m+[m[32m---[m
+[32m+[m[32mI hope this one finally works as expected, I might consider changing the cms otherwise tbh.[m
+[1mdiff --git a/content/recherche/static/documents/2f557304-5362-4bf1-a344-30073cf43c07.pdf b/content/recherche/static/documents/2f557304-5362-4bf1-a344-30073cf43c07.pdf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3683b73[m
+Binary files /dev/null and b/content/recherche/static/documents/2f557304-5362-4bf1-a344-30073cf43c07.pdf differ
+[1mdiff --git a/layouts/partials/recherche/single.html b/layouts/partials/recherche/single.html[m
+[1mindex 5bd3bcd..4573928 100644[m
+[1m--- a/layouts/partials/recherche/single.html[m
+[1m+++ b/layouts/partials/recherche/single.html[m
+[36m@@ -7,12 +7,6 @@[m
+       Download PDF[m
+     </a>[m
+   </p>[m
+[31m-  {{ else if .Params.pdf }}[m
+[31m-  <p>[m
+[31m-    <a href="{{ .Params.pdf }}" target="_blank" rel="noopener noreferrer">[m
+[31m-      Download PDF[m
+[31m-    </a>[m
+[31m-  </p>[m
+   {{ end }}[m
+ [m
+ </div>[m
+[1mdiff --git a/public/actu/index.html b/public/actu/index.html[m
+[1mindex 4832bdb..15aa3fa 100644[m
+[1m--- a/public/actu/index.html[m
+[1m+++ b/public/actu/index.html[m
+[36m@@ -52,18 +52,6 @@[m
+   <section class="list-items-container">[m
+     <ul class="list-items">[m
+       [m
+[31m-      <li>[m
+[31m-        <a class="item" href="/actu/titre/" aria-label="Read more about Titre">[m
+[31m-          <span>Titre</span>[m
+[31m-        </a>[m
+[31m-      </li>[m
+[31m-      [m
+[31m-      <li>[m
+[31m-        <a class="item" href="/actu/local-actu/" aria-label="Read more about local actu">[m
+[31m-          <span>local actu</span>[m
+[31m-        </a>[m
+[31m-      </li>[m
+[31m-      [m
+       <li>[m
+         <a class="item" href="/actu/news-du-le-6-f%C3%A9vrier/" aria-label="Read more about News du le 6 février">[m
+           <span>News du le 6 février</span>[m
+[1mdiff --git a/public/actu/index.xml b/public/actu/index.xml[m
+[1mindex 06ba346..b0c34a8 100644[m
+[1m--- a/public/actu/index.xml[m
+[1m+++ b/public/actu/index.xml[m
+[36m@@ -6,28 +6,14 @@[m
+     <description>Recent content in Actualités on Creatip</description>[m
+     <generator>Hugo</generator>[m
+     <language>fr-fr</language>[m
+[31m-    <lastBuildDate>Sat, 08 Feb 2025 19:39:00 +0000</lastBuildDate>[m
+[32m+[m[32m    <lastBuildDate>Thu, 06 Feb 2025 18:24:00 +0000</lastBuildDate>[m
+     <atom:link href="http://localhost:1313/actu/index.xml" rel="self" type="application/rss+xml" />[m
+[31m-    <item>[m
+[31m-      <title>Titre</title>[m
+[31m-      <link>http://localhost:1313/actu/titre/</link>[m
+[31m-      <pubDate>Sat, 08 Feb 2025 19:39:00 +0000</pubDate>[m
+[31m-      <guid>http://localhost:1313/actu/titre/</guid>[m
+[31m-      <description>&lt;p&gt;New content&lt;/p&gt;</description>[m
+[31m-    </item>[m
+[31m-    <item>[m
+[31m-      <title>local actu</title>[m
+[31m-      <link>http://localhost:1313/actu/local-actu/</link>[m
+[31m-      <pubDate>Sat, 08 Feb 2025 18:39:00 +0000</pubDate>[m
+[31m-      <guid>http://localhost:1313/actu/local-actu/</guid>[m
+[31m-      <description>&lt;p&gt;Act Now&lt;/p&gt;</description>[m
+[31m-    </item>[m
+     <item>[m
+       <title>News du le 6 février</title>[m
+       <link>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</link>[m
+       <pubDate>Thu, 06 Feb 2025 18:24:00 +0000</pubDate>[m
+       <guid>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</guid>[m
+[31m-      <description>&lt;p&gt;Bonjour, nouveau message aujourd&amp;rsquo;hui 22&lt;/p&gt;</description>[m
+[32m+[m[32m      <description>&lt;p&gt;Bonjour, nouveau bonjour aujourd&amp;rsquo;hui&lt;/p&gt;</description>[m
+     </item>[m
+     <item>[m
+       <title>Buongiorno</title>[m
+[1mdiff --git a/public/actu/local-actu/index.html b/public/actu/local-actu/index.html[m
+[1mdeleted file mode 100644[m
+[1mindex 238c5de..0000000[m
+[1m--- a/public/actu/local-actu/index.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,79 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang="fr">[m
+[31m-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>[m
+[31m-  <meta charset="utf-8">[m
+[31m-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">[m
+[31m-<meta name="description" content="CREATIP est une association loi 1901 de psychothérapie basée sur la recherche, formation et promotion de la thérapie interpersonnelle (TIP) en France">[m
+[31m-<title>local actu</title>[m
+[31m- [m
+[31m-<link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">[m
+[31m-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">[m
+[31m-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">[m
+[31m-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">[m
+[31m-<link rel="manifest" href="/favicon/site.webmanifest">[m
+[31m-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">[m
+[31m-<meta name="msapplication-TileColor" content="#da532c">[m
+[31m-<meta name="theme-color" content="#ffffff">[m
+[31m-[m
+[31m-</head>[m
+[31m-[m
+[31m-<body>[m
+[31m-  <main id="page">[m
+[31m-    <header class="main-header">[m
+[31m-[m
+[31m-  <nav class="navbar" role="navigation" aria-label="Main Navigation">[m
+[31m-    <a href="/" aria-label="Lien pour aller à la page d'accueil">[m
+[31m-      <img src="/images/logo.svg" alt="logo CREATIP" class="logo">[m
+[31m-    </a>[m
+[31m-    <input type="checkbox" id="menu-input" />[m
+[31m-    <label for="menu-input" id="menu-button"><span></span></label>[m
+[31m-      <div id="overlay">[m
+[31m-        <menu id="menu">[m
+[31m-          <ul >[m
+[31m-            <li class="menu-item"><a href="/formation/" aria-label="Naviguer vers la page ">Formation</a></li>[m
+[31m-            <li class="menu-item"><a href="/actu">Actualités</a></li>[m
+[31m-            <li class="menu-item"><a href="/recherche">Recherche</a></li>[m
+[31m-            <li class="menu-item"><a href="/annuaire">Annuaire</a></li>[m
+[31m-            <li class="menu-item"><a href="#footer">Contact</a></li>[m
+[31m-            <li class="menu-item"><a href="/apropos">À propos</a></li>[m
+[31m-          </ul>[m
+[31m-        </menu>[m
+[31m-      </div>[m
+[31m-   </nav>[m
+[31m-</header>[m
+[31m-[m
+[31m-    [m
+[31m-      <h1 class="page-title">local actu</h1>[m
+[31m-    [m
+[31m-    [m
+[31m-<div class="content-wrap">[m
+[31m-  <p>Act Now</p>[m
+[31m-[m
+[31m-</div>[m
+[31m-[m
+[31m-    <div class="back_to_top">[m
+[31m-      <a href="#" aria-label="Arrow-shaped clickable link back to top of the page">[m
+[31m-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M1 16a15 15 0 1 1 15 15A15 15 0 0 1 1 16Zm2 0A13 13 0 1 0 16 3 13 13 0 0 0 3 16Z" fill="#4b4b4b" class="fill-000000"></path><path d="M10.41 19.87 16 14.29l5.59 5.58a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-6.36-6.36a.91.91 0 0 0-1.28 0L9 18.46a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0Z" fill="#4b4b4b" class="fill-000000"></path></g></svg>[m
+[31m-      </a>[m
+[31m-    </div>[m
+[31m-    </main>[m
+[31m-    <footer id="footer">[m
+[31m-        <div class="footer_first">[m
+[31m-    <p class="footer_statuts">[m
+[31m-      <strong>Cercle de Recherches et d'Etudes Appliquées à la Thérapie InterPersonnelle</strong><br>[m
+[31m-      Association loi 1901, statuts déposés en janvier 2005<br>[m
+[31m-      46 avenue du Parmelan 74000 ANNECY[m
+[31m-    </p>[m
+[31m-    <p id="footer-eco">[m
+[31m-      Ce site est éco-conçu, il vise à réduire son impact environnemental.<br>[m
+[31m-      <div id="wcb" class="carbonbadge"></div>[m
+[31m-      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>[m
+[31m-    </p>[m
+[31m-    <p id="conception">[m
+[31m-      Un site de : <a href="https://github.com/Discopigeononline" target="_blank" rel="noopener noreferrer" class="creator">Disco Pigeon</a>[m
+[31m-    </p>[m
+[31m-  </div>[m
+[31m-[m
+[31m-    </footer>[m
+[31m-</body>[m
+[31m-</html>[m
+[1mdiff --git "a/public/actu/news-du-le-6-f\303\251vrier/index.html" "b/public/actu/news-du-le-6-f\303\251vrier/index.html"[m
+[1mindex 06c938d..b794f58 100644[m
+[1m--- "a/public/actu/news-du-le-6-f\303\251vrier/index.html"[m
+[1m+++ "b/public/actu/news-du-le-6-f\303\251vrier/index.html"[m
+[36m@@ -47,7 +47,7 @@[m
+     [m
+     [m
+ <div class="content-wrap">[m
+[31m-  <p>Bonjour, nouveau message aujourd&rsquo;hui 22</p>[m
+[32m+[m[32m  <p>Bonjour, nouveau bonjour aujourd&rsquo;hui</p>[m
+ [m
+ </div>[m
+ [m
+[1mdiff --git a/public/actu/titre/index.html b/public/actu/titre/index.html[m
+[1mdeleted file mode 100644[m
+[1mindex c1835ea..0000000[m
+[1m--- a/public/actu/titre/index.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,79 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html lang="fr">[m
+[31m-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>[m
+[31m-  <meta charset="utf-8">[m
+[31m-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">[m
+[31m-<meta name="description" content="CREATIP est une association loi 1901 de psychothérapie basée sur la recherche, formation et promotion de la thérapie interpersonnelle (TIP) en France">[m
+[31m-<title>Titre</title>[m
+[31m- [m
+[31m-<link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">[m
+[31m-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">[m
+[31m-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">[m
+[31m-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">[m
+[31m-<link rel="manifest" href="/favicon/site.webmanifest">[m
+[31m-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">[m
+[31m-<meta name="msapplication-TileColor" content="#da532c">[m
+[31m-<meta name="theme-color" content="#ffffff">[m
+[31m-[m
+[31m-</head>[m
+[31m-[m
+[31m-<body>[m
+[31m-  <main id="page">[m
+[31m-    <header class="main-header">[m
+[31m-[m
+[31m-  <nav class="navbar" role="navigation" aria-label="Main Navigation">[m
+[31m-    <a href="/" aria-label="Lien pour aller à la page d'accueil">[m
+[31m-      <img src="/images/logo.svg" alt="logo CREATIP" class="logo">[m
+[31m-    </a>[m
+[31m-    <input type="checkbox" id="menu-input" />[m
+[31m-    <label for="menu-input" id="menu-button"><span></span></label>[m
+[31m-      <div id="overlay">[m
+[31m-        <menu id="menu">[m
+[31m-          <ul >[m
+[31m-            <li class="menu-item"><a href="/formation/" aria-label="Naviguer vers la page ">Formation</a></li>[m
+[31m-            <li class="menu-item"><a href="/actu">Actualités</a></li>[m
+[31m-            <li class="menu-item"><a href="/recherche">Recherche</a></li>[m
+[31m-            <li class="menu-item"><a href="/annuaire">Annuaire</a></li>[m
+[31m-            <li class="menu-item"><a href="#footer">Contact</a></li>[m
+[31m-            <li class="menu-item"><a href="/apropos">À propos</a></li>[m
+[31m-          </ul>[m
+[31m-        </menu>[m
+[31m-      </div>[m
+[31m-   </nav>[m
+[31m-</header>[m
+[31m-[m
+[31m-    [m
+[31m-      <h1 class="page-title">Titre</h1>[m
+[31m-    [m
+[31m-    [m
+[31m-<div class="content-wrap">[m
+[31m-  <p>New content</p>[m
+[31m-[m
+[31m-</div>[m
+[31m-[m
+[31m-    <div class="back_to_top">[m
+[31m-      <a href="#" aria-label="Arrow-shaped clickable link back to top of the page">[m
+[31m-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M1 16a15 15 0 1 1 15 15A15 15 0 0 1 1 16Zm2 0A13 13 0 1 0 16 3 13 13 0 0 0 3 16Z" fill="#4b4b4b" class="fill-000000"></path><path d="M10.41 19.87 16 14.29l5.59 5.58a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-6.36-6.36a.91.91 0 0 0-1.28 0L9 18.46a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0Z" fill="#4b4b4b" class="fill-000000"></path></g></svg>[m
+[31m-      </a>[m
+[31m-    </div>[m
+[31m-    </main>[m
+[31m-    <footer id="footer">[m
+[31m-        <div class="footer_first">[m
+[31m-    <p class="footer_statuts">[m
+[31m-      <strong>Cercle de Recherches et d'Etudes Appliquées à la Thérapie InterPersonnelle</strong><br>[m
+[31m-      Association loi 1901, statuts déposés en janvier 2005<br>[m
+[31m-      46 avenue du Parmelan 74000 ANNECY[m
+[31m-    </p>[m
+[31m-    <p id="footer-eco">[m
+[31m-      Ce site est éco-conçu, il vise à réduire son impact environnemental.<br>[m
+[31m-      <div id="wcb" class="carbonbadge"></div>[m
+[31m-      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>[m
+[31m-    </p>[m
+[31m-    <p id="conception">[m
+[31m-      Un site de : <a href="https://github.com/Discopigeononline" target="_blank" rel="noopener noreferrer" class="creator">Disco Pigeon</a>[m
+[31m-    </p>[m
+[31m-  </div>[m
+[31m-[m
+[31m-    </footer>[m
+[31m-</body>[m
+[31m-</html>[m
+[1mdiff --git a/public/admin/config.yml b/public/admin/config.yml[m
+[1mindex a5ddc23..38c3962 100644[m
+[1m--- a/public/admin/config.yml[m
+[1m+++ b/public/admin/config.yml[m
+[36m@@ -87,8 +87,4 @@[m [mcollections:[m
+       - {label: "Titre", name: "title", widget: "string"}[m
+       - {label: "Date", name: "date", widget: "datetime"}[m
+       - {label: "Contenu", name: "body", widget: "markdown"}[m
+[31m-      - label: "Document"[m
+[31m-        name: "document"[m
+[31m-        widget: "file"[m
+[31m-        media_folder: "static/documents"[m
+[31m-        public_folder: "/documents"[m
+\ No newline at end of file[m
+[32m+[m[32m      - {label: "Document", name: "document", widget: "file"}[m
+[1mdiff --git a/public/index.html b/public/index.html[m
+[1mindex 64fd3c8..75de489 100644[m
+[1m--- a/public/index.html[m
+[1m+++ b/public/index.html[m
+[36m@@ -1,7 +1,7 @@[m
+ <!DOCTYPE html>[m
+ <html lang="fr">[m
+ <head>[m
+[31m-	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>[m
+[32m+[m	[32m<meta name="generator" content="Hugo 0.143.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>[m
+   <meta charset="utf-8">[m
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">[m
+ <meta name="description" content="CREATIP est une association loi 1901 de psychothérapie basée sur la recherche, formation et promotion de la thérapie interpersonnelle (TIP) en France">[m
+[1mdiff --git a/public/index.xml b/public/index.xml[m
+[1mindex 75c8497..3b8fc9c 100644[m
+[1m--- a/public/index.xml[m
+[1m+++ b/public/index.xml[m
+[36m@@ -6,22 +6,8 @@[m
+     <description>Recent content in Thérapie Interpersonnelle | CREATIP on Creatip</description>[m
+     <generator>Hugo</generator>[m
+     <language>fr-fr</language>[m
+[31m-    <lastBuildDate>Sat, 08 Feb 2025 19:39:00 +0000</lastBuildDate>[m
+[32m+[m[32m    <lastBuildDate>Thu, 06 Feb 2025 19:43:00 +0000</lastBuildDate>[m
+     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />[m
+[31m-    <item>[m
+[31m-      <title>Titre</title>[m
+[31m-      <link>http://localhost:1313/actu/titre/</link>[m
+[31m-      <pubDate>Sat, 08 Feb 2025 19:39:00 +0000</pubDate>[m
+[31m-      <guid>http://localhost:1313/actu/titre/</guid>[m
+[31m-      <description>&lt;p&gt;New content&lt;/p&gt;</description>[m
+[31m-    </item>[m
+[31m-    <item>[m
+[31m-      <title>local actu</title>[m
+[31m-      <link>http://localhost:1313/actu/local-actu/</link>[m
+[31m-      <pubDate>Sat, 08 Feb 2025 18:39:00 +0000</pubDate>[m
+[31m-      <guid>http://localhost:1313/actu/local-actu/</guid>[m
+[31m-      <description>&lt;p&gt;Act Now&lt;/p&gt;</description>[m
+[31m-    </item>[m
+     <item>[m
+       <title>New Study</title>[m
+       <link>http://localhost:1313/recherche/new-study/</link>[m
+[36m@@ -41,7 +27,7 @@[m
+       <link>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</link>[m
+       <pubDate>Thu, 06 Feb 2025 18:24:00 +0000</pubDate>[m
+       <guid>http://localhost:1313/actu/news-du-le-6-f%C3%A9vrier/</guid>[m
+[31m-      <description>&lt;p&gt;Bonjour, nouveau message aujourd&amp;rsquo;hui 22&lt;/p&gt;</description>[m
+[32m+[m[32m      <description>&lt;p&gt;Bonjour, nouveau bonjour aujourd&amp;rsquo;hui&lt;/p&gt;</description>[m
+     </item>[m
+     <item>[m
+       <title>Buongiorno</title>[m
+[36m@@ -64,6 +50,13 @@[m
+       <guid>http://localhost:1313/actu/newz-du-jour/</guid>[m
+       <description>&lt;p&gt;Bonjour.&lt;/p&gt;</description>[m
+     </item>[m
+[32m+[m[32m    <item>[m
+[32m+[m[32m      <title>Du contenu de la recherche</title>[m
+[32m+[m[32m      <link>http://localhost:1313/recherche/2024/11/recherche-importante-md/</link>[m
+[32m+[m[32m      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>[m
+[32m+[m[32m      <guid>http://localhost:1313/recherche/2024/11/recherche-importante-md/</guid>[m
+[32m+[m[32m      <description>&lt;p&gt;Du contenu de la recherche&lt;/p&gt;</description>[m
+[32m+[m[32m    </item>[m
+     <item>[m
+       <title>Actu 3</title>[m
+       <link>http://localhost:1313/actu/actu-3-md/</link>[m
+[36m@@ -71,6 +64,13 @@[m
+       <guid>http://localhost:1313/actu/actu-3-md/</guid>[m
+       <description>&lt;p&gt;Benvenutto alla actualità 3&lt;/p&gt;</description>[m
+     </item>[m
+[32m+[m[32m    <item>[m
+[32m+[m[32m      <title>Percept</title>[m
+[32m+[m[32m      <link>http://localhost:1313/recherche/2024/11/percept/a/</link>[m
+[32m+[m[32m      <pubDate>Wed, 06 Nov 2024 17:10:00 +0000</pubDate>[m
+[32m+[m[32m      <guid>http://localhost:1313/recherche/2024/11/percept/a/</guid>[m
+[32m+[m[32m      <description>&lt;p&gt;Le PDF attached&lt;/p&gt;</description>[m
+[32m+[m[32m    </item>[m
+     <item>[m
+       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>[m
+       <link>http://localhost:1313/recherche/art3-copy-2/</link>[m
+[1mdiff --git a/public/recherche/index.html b/public/recherche/index.html[m
+[1mindex a79e4fa..01b5c97 100644[m
+[1m--- a/public/recherche/index.html[m
+[1m+++ b/public/recherche/index.html[m
+[36m@@ -65,6 +65,18 @@[m
+         </a>[m
+       </li>[m
+       [m
+[32m+[m[32m      <li>[m
+[32m+[m[32m        <a class="item" href="/recherche/2024/11/recherche-importante-md/" aria-label="Read more about Du contenu de la recherche">[m
+[32m+[m[32m          <span>Du contenu de la recherche</span>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m      </li>[m
+[32m+[m[41m      [m
+[32m+[m[32m      <li>[m
+[32m+[m[32m        <a class="item" href="/recherche/2024/11/percept/a/" aria-label="Read more about Percept">[m
+[32m+[m[32m          <span>Percept</span>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m      </li>[m
+[32m+[m[41m      [m
+       <li>[m
+         <a class="item" href="/recherche/art3-copy-2/" aria-label="Read more about Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study">[m
+           <span>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</span>[m
+[1mdiff --git a/public/recherche/index.xml b/public/recherche/index.xml[m
+[1mindex 055f459..92e216e 100644[m
+[1m--- a/public/recherche/index.xml[m
+[1m+++ b/public/recherche/index.xml[m
+[36m@@ -22,6 +22,20 @@[m
+       <guid>http://localhost:1313/recherche/testfrontmatter/</guid>[m
+       <description>&lt;p&gt;Check this fresh new study oh&lt;/p&gt;</description>[m
+     </item>[m
+[32m+[m[32m    <item>[m
+[32m+[m[32m      <title>Du contenu de la recherche</title>[m
+[32m+[m[32m      <link>http://localhost:1313/recherche/2024/11/recherche-importante-md/</link>[m
+[32m+[m[32m      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>[m
+[32m+[m[32m      <guid>http://localhost:1313/recherche/2024/11/recherche-importante-md/</guid>[m
+[32m+[m[32m      <description>&lt;p&gt;Du contenu de la recherche&lt;/p&gt;</description>[m
+[32m+[m[32m    </item>[m
+[32m+[m[32m    <item>[m
+[32m+[m[32m      <title>Percept</title>[m
+[32m+[m[32m      <link>http://localhost:1313/recherche/2024/11/percept/a/</link>[m
+[32m+[m[32m      <pubDate>Wed, 06 Nov 2024 17:10:00 +0000</pubDate>[m
+[32m+[m[32m      <guid>http://localhost:1313/recherche/2024/11/percept/a/</guid>[m
+[32m+[m[32m      <description>&lt;p&gt;Le PDF attached&lt;/p&gt;</description>[m
+[32m+[m[32m    </item>[m
+     <item>[m
+       <title>Perceptions, facilitators and barriers to the implementation of interpersonal group therapy to treat depression among people living with HIV in Senegal: a qualitative study</title>[m
+       <link>http://localhost:1313/recherche/art3-copy-2/</link>[m
+[1mdiff --git a/public/sitemap.xml b/public/sitemap.xml[m
+[1mindex d34e405..29d5f63 100644[m
+[1m--- a/public/sitemap.xml[m
+[1m+++ b/public/sitemap.xml[m
+[36m@@ -2,33 +2,23 @@[m
+ <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"[m
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">[m
+   <url>[m
+[31m-    <loc>http://localhost:1313/actu/</loc>[m
+[31m-    <lastmod>2025-02-08T19:39:00+00:00</lastmod>[m
+[31m-    <changefreq>monthly</changefreq>[m
+[31m-    <priority>0.5</priority>[m
+[31m-  </url><url>[m
+[31m-    <loc>http://localhost:1313/</loc>[m
+[31m-    <lastmod>2025-02-08T19:39:00+00:00</lastmod>[m
+[31m-    <changefreq>monthly</changefreq>[m
+[31m-    <priority>0.5</priority>[m
+[31m-  </url><url>[m
+[31m-    <loc>http://localhost:1313/actu/titre/</loc>[m
+[31m-    <lastmod>2025-02-08T19:39:00+00:00</lastmod>[m
+[32m+[m[32m    <loc>http://localhost:1313/recherche/new-study/</loc>[m
+[32m+[m[32m    <lastmod>2025-02-06T19:43:00+00:00</lastmod>[m
+     <changefreq>monthly</changefreq>[m
+     <priority>0.5</priority>[m
+   </url><url>[m
+[31m-    <loc>http://localhost:1313/actu/local-actu/</loc>[m
+[31m-    <lastmod>2025-02-08T18:39:00+00:00</lastmod>[m
+[32m+[m[32m    <loc>http://localhost:1313/recherche/testfrontmatter/</loc>[m
+[32m+[m[32m    <lastmod>2025-02-06T19:43:00+00:00</lastmod>[m
+     <changefreq>monthly</changefreq>[m
+     <priority>0.5</priority>[m
+   </url><url>[m
+[31m-    <loc>http://localhost:1313/recherche/new-study/</loc>[m
+[32m+[m[32m    <loc>http://localhost:1313/</loc>[m
+     <lastmod>2025-02-06T19:43:00+00:00</lastmod>[m
+     <changefreq>monthly</changefreq>[m
+     <priority>0.5</priority>[m
+   </url><url>[m
+[31m-    <loc>http://localhost:1313/recherche/testfrontmatter/</loc>[m
+[31m-    <lastmod>2025-02-06T19:43:00+00:00</lastmod>[m
+[32m+[m[32m    <loc>http://localhost:1313/actu/</loc>[m
+[32m+[m[32m    <lastmod>2025-02-06T18:24:00+00:00</lastmod>[m
+     <changefreq>monthly</changefreq>[m
+     <priority>0.5</priority>[m
+   </url><url>[m
+[36m@@ -56,11 +46,21 @@[m
+     <lastmod>2024-11-12T19:09:00+00:00</lastmod>[m
+     <changefreq>monthly</changefreq>[m
+     <priority>0.5</priority>[m
+[32m+[m[32m  </url><url>[m
+[32m+[m[32m    <loc>http://localhost:1313/recherche/2024/11/recherche-importante-md/</loc>[m
+[32m+[m[32m    <lastmod>2024-11-11T00:00:00+00:00</lastmod>[m
+[32m+[m[32m    <changefreq>monthly</changefreq>[m
+[32m+[m[32m    <priority>0.5</priority>[m
+   </url><url>[m
+     <loc>http://localhost:1313/actu/actu-3-md/</loc>[m
+     <lastmod>2024-11-06T18:32:00+00:00</lastmod>[m
+     <changefreq>monthly</changefreq>[m
+     <priority>0.5</priority>[m
+[32m+[m[32m  </url><url>[m
+[32m+[m[32m    <loc>http://localhost:1313/recherche/2024/11/percept/a/</loc>[m
+[32m+[m[32m    <lastmod>2024-11-06T17:10:00+00:00</lastmod>[m
+[32m+[m[32m    <changefreq>monthly</changefreq>[m
+[32m+[m[32m    <priority>0.5</priority>[m
+   </url><url>[m
+     <loc>http://localhost:1313/recherche/art3-copy-2/</loc>[m
+     <lastmod>2023-11-19T00:40:04-07:00</lastmod>[m
+[1mdiff --git a/static/admin/config.yml b/static/admin/config.yml[m
+[1mindex a5ddc23..38c3962 100644[m
+[1m--- a/static/admin/config.yml[m
+[1m+++ b/static/admin/config.yml[m
+[36m@@ -87,8 +87,4 @@[m [mcollections:[m
+       - {label: "Titre", name: "title", widget: "string"}[m
+       - {label: "Date", name: "date", widget: "datetime"}[m
+       - {label: "Contenu", name: "body", widget: "markdown"}[m
+[31m-      - label: "Document"[m
+[31m-        name: "document"[m
+[31m-        widget: "file"[m
+[31m-        media_folder: "static/documents"[m
+[31m-        public_folder: "/documents"[m
+\ No newline at end of file[m
+[32m+[m[32m      - {label: "Document", name: "document", widget: "file"}[m
